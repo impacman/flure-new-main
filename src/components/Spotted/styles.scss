@@ -49,6 +49,13 @@
       @include mob {
         grid-gap: m(17);
       }
+
+      &.start {
+        animation-name: tickerScroll;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 50s;
+      }
     }
 
     &-item {

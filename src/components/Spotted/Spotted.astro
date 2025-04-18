@@ -31,12 +31,5 @@ const newArray = [...items, ...items];
   const tickers: NodeListOf<HTMLDivElement> =
     document.querySelectorAll("[data-ticker]");
 
-  tickers.forEach((ticker) => {
-    const duration = ticker.scrollWidth / 2 / speed;
-
-    ticker.style.animationName = "tickerScroll";
-    ticker.style.animationTimingFunction = "linear";
-    ticker.style.animationIterationCount = "infinite";
-    ticker.style.animationDuration = `${duration}s`;
-  });
+  tickers.forEach((ticker) => ticker.classList.add("start"));
 </script>
