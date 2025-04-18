@@ -1091,10 +1091,9 @@
         transition: opacity 0.3s ease 0s;
 
         @include des {
-          width: d(1);
-          height: d(1);
-          transform: scale(10);
-          margin: 0 d(9);
+          width: d(10);
+          height: d(10);
+          margin: 0 d(7);
         }
 
         @include mob {
