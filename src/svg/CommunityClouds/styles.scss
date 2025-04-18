@@ -1,0 +1,47 @@
+.clouds--descr {
+  z-index: 2;
+
+  & .cloud {
+    position: absolute;
+
+    &__wrap {
+      width: 100%;
+      height: 100%;
+      animation: cloudMovement 8s infinite ease-in-out alternate;
+    }
+
+    @include des {
+      width: d(var(--wd));
+      height: d(var(--hd));
+    }
+
+    @include mob {
+      width: m(var(--wm));
+      height: m(var(--hm));
+    }
+
+    &--1 {
+      @include des {
+        top: d(542);
+        left: d(-606);
+      }
+
+      @include mob {
+        top: m(84);
+        right: m(182);
+      }
+    }
+  }
+}
+
+@keyframes cloudMovement {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-10px) scale(1.1);
+  }
+  100% {
+    transform: translateY(10px) scale(0.9);
+  }
+}

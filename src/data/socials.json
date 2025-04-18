@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": "instagram",
+      "link": "https://www.instagram.com/flureapp/"
+    },
+    {
+      "id": "tiktok",
+      "link": "https://www.tiktok.com/@flureapp"
+    },
+    {
+      "id": "twitter",
+      "link": "https://twitter.com/flureapp"
+    },
+    {
+      "id": "medium",
+      "link": "https://flure.medium.com/"
+    }
+  ]
+}

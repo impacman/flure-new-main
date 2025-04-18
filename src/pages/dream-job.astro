@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Dream from "../components/Dream";
+
+import ROUTES from "../routes";
+const rout = ROUTES["dream"];
+
+const metadata = {
+  title: "VP of Going Out | Your Dream Job Awaits at Flure",
+  descr:
+    "Forget swiping aimlessly—what if your dating life looked more like the big screen? Flure is looking for a VP of Going  Out, someone bold enough to step into the spotlight and recreate the most iconic romantic movie moments",
+  image: "og-img.png",
+};
+---
+
+<Layout metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme}>
+  <Dream />
+</Layout>

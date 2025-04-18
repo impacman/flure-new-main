@@ -1,0 +1,36 @@
+.peoples {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+
+    @include mob {
+      transform: translateX(-4.5%);
+    }
+  }
+
+  &__svg {
+    position: absolute;
+    transform: translateY(100%);
+
+    @include des {
+      left: d(-32.98);
+      bottom: d(-25.65);
+      width: d(1426.2);
+      height: d(586.53);
+    }
+
+    @include mob {
+      width: m(405);
+      height: m(345);
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

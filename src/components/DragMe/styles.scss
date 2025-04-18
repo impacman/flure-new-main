@@ -1,0 +1,255 @@
+.drag-me {
+  position: relative;
+  width: 100vw;
+  background-color: inherit;
+  z-index: 10;
+  font-family: var(--font-poppins);
+
+  @include des {
+    height: d(695);
+  }
+
+  @include mob {
+    height: m(713);
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: var(--black);
+    font-weight: 200;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: opacity 0.5s ease 0s;
+
+    &.hide {
+      opacity: 0;
+    }
+
+    @include des {
+      font-size: d(40);
+    }
+
+    @include mob {
+      font-size: m(25);
+    }
+  }
+
+  & .drag-me-women {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include des {
+      width: d(642);
+      height: d(592);
+      top: d(75);
+    }
+
+    @include mob {
+      width: m(360);
+      height: m(331);
+      top: m(221);
+    }
+  }
+
+  & .flowers {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    & .flower {
+      position: absolute;
+      cursor: grab;
+
+      &--1 {
+        z-index: 1;
+
+        @include des {
+          top: d(292);
+          left: d(180);
+          width: d(283.59);
+          height: d(287.22);
+        }
+
+        @include mob {
+          width: m(155.36);
+          height: m(206.36);
+          top: m(30);
+          right: m(10);
+        }
+      }
+
+      &--2 {
+        z-index: 2;
+
+        @include des {
+          top: d(10);
+          left: d(626);
+          width: d(214.26);
+          height: d(284.67);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+
+      &--3 {
+        z-index: 3;
+
+        @include des {
+          top: d(248);
+          left: d(662);
+          width: d(197.8);
+          height: d(275.58);
+        }
+
+        @include mob {
+          width: m(155.36);
+          height: m(206.36);
+          left: m(-9);
+          top: m(145);
+        }
+      }
+
+      &--4 {
+        z-index: 2;
+
+        @include des {
+          left: d(628);
+          bottom: d(-33);
+          width: d(283.59);
+          height: d(287.22);
+        }
+
+        @include mob {
+          width: m(196.68);
+          height: m(197.25);
+          right: m(-11);
+          top: m(-98);
+        }
+      }
+
+      &--5 {
+        z-index: 2;
+
+        @include des {
+          top: d(50);
+          left: d(900);
+          width: d(214.26);
+          height: d(284.67);
+        }
+
+        @include mob {
+          width: m(143.45);
+          height: m(199.78);
+          top: m(60);
+          left: m(60);
+        }
+      }
+
+      &--6 {
+        z-index: 3;
+
+        @include des {
+          top: d(76);
+          right: d(590);
+          width: d(257.81);
+          height: d(261.11);
+        }
+
+        @include mob {
+          width: m(186.91);
+          height: m(189.3);
+          bottom: m(26);
+          right: m(62);
+        }
+      }
+
+      &--7 {
+        z-index: 4;
+
+        @include des {
+          top: d(265);
+          right: d(640);
+          width: d(271.31);
+          height: d(272.09);
+        }
+
+        @include mob {
+          z-index: 6;
+          width: m(215.63);
+          height: m(192.96);
+          right: m(9);
+          bottom: m(155);
+        }
+      }
+
+      &--8 {
+        z-index: 3;
+
+        @include des {
+          bottom: d(6);
+          right: d(442);
+          width: d(271.31);
+          height: d(272.09);
+        }
+
+        @include mob {
+          width: m(143.45);
+          height: m(199.78);
+          right: m(-20);
+          bottom: m(276);
+        }
+      }
+
+      &--9 {
+        z-index: 2;
+
+        @include des {
+          top: d(-210);
+          right: d(358);
+          width: d(221.7);
+          height: d(308.91);
+        }
+
+        @include mob {
+          width: m(155.36);
+          height: m(206.36);
+          left: m(-6);
+          bottom: m(232);
+        }
+      }
+
+      &--10 {
+        z-index: 5;
+
+        @include des {
+          top: d(205);
+          left: d(808);
+          width: d(322.21);
+          height: d(323.14);
+        }
+
+        @include mob {
+          width: m(186);
+          height: m(189);
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

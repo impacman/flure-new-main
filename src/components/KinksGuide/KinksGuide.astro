@@ -1,0 +1,61 @@
+---
+import type { Card } from "./components/GuideCard/GuideCard.astro";
+import kinks_guide from "../../data/kinks_guide.json";
+import PerfumePastel from "../../svg/PerfumePastel";
+import PerfumePastelMobile from "../../svg/PerfumePastelMobile";
+import WhitePastel from "../../svg/WhitePastel";
+import PinkPastel from "../../svg/PinkPastel";
+import PinkPastelMobile from "../../svg/PinkPastelMobile";
+import ShareNudeButton from "../ShareNudeButton";
+import Title from "../Title";
+import Descr from "../Descr";
+import { GuideCard } from "./components";
+import { GuidePlaceholderCard } from "./components/GuidePlaceholderCard";
+import "./styles.scss";
+---
+
+<section class="kinks-guide">
+
+  <div class="kinks-guide__top-container">
+    <Title title={kinks_guide.title} />
+    <Descr descr={kinks_guide.subtitle} />
+    <img class="kinks-guide__top-container__splash-image" src={kinks_guide["splash-img"]} />
+  </div>
+
+  <div class="kinks-guide__description-container">
+    <PerfumePastel />
+    <PerfumePastelMobile />
+    <Descr descr={kinks_guide.description} />
+    <img class="kinks-guide__description-container__eye-mask-image" src={kinks_guide["eye-mask-img"]} />
+    <img class="kinks-guide__description-container__toy-white-image" src={kinks_guide["toy-white-img"]} />
+    <img class="kinks-guide__description-container__toy-black-image" src={kinks_guide["toy-black-img"]} />
+  </div>
+
+  <div class="kinks-guide__cards">
+    <WhitePastel />
+    {
+      (kinks_guide.cards as Card[]).map((card) => {
+        if (card.letter === 'Placeholder') {
+          return <GuidePlaceholderCard key={card.letter} card={card} />
+        }
+        return <GuideCard key={card.letter} card={card} />;
+      })
+    }
+  </div>
+
+  <div class="kinks-guide__explore-and-date__wrapper">
+    <PinkPastel />
+    <PinkPastelMobile />
+    <div class="kinks-guide__explore-and-date">
+      <Title title={kinks_guide["explore-and-date-title"]} />
+      <ShareNudeButton text={kinks_guide["get-to-it"]} />
+    </div>
+  </div>
+
+  <div class="kinks-guide__footer">
+    <Descr descr={kinks_guide["footer-text-part-1"]} />
+    <h2>{kinks_guide["footer-text-part-2"].text}</h2>
+    <Descr descr={kinks_guide["footer-text-part-3"]} />
+    <img class="kinks-guide__footer__image" src={kinks_guide["footer-img"]} />
+  </div>
+</section>

@@ -1,0 +1,52 @@
+.dream-text-promo {
+  position: relative;
+  width: 100%;
+  background-color: var(--transparent);
+  overflow: hidden;
+  z-index: 4;
+
+  &__wrap {
+    position: relative;
+    z-index: 19;
+    text-align: center;
+
+    @include des {
+      padding: d(16.6) d(10) d(176);
+    }
+
+    @include mob {
+      padding: m(11) 0 m(168);
+    }
+  }
+
+  & .title {
+    font-family: var(--font-poppins);
+    font-weight: 200;
+
+    & b {
+      font-weight: 700;
+    }
+
+    @include des {
+      font-size: d(130);
+    }
+
+    @include mob {
+      font-size: m(42);
+    }
+  }
+
+  & .dream-descr {
+    @include des {
+      margin-top: d(35);
+    }
+
+    @include mob {
+      margin-top: m(15);
+
+      & b {
+        font-weight: inherit;
+      }
+    }
+  }
+}

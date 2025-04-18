@@ -1,0 +1,25 @@
+---
+import { KinksGuideCardPerfume } from "../../../../svg/KinksGuideCard";
+import ShareNudeButton from "../../../ShareNudeButton";
+import kinks_guide from "../../../../data/kinks_guide.json";
+import "./styles.scss";
+
+export type Card = {
+  title: string;
+  cardColor: "black" | "frenchLilac" | "perfume";
+};
+
+interface Props {
+  key: string;
+  card: Card;
+}
+
+const { card } = Astro.props;
+const { title } = card || {};
+---
+
+<div class="kinks-guide__placeholder-card-container">
+  <KinksGuideCardPerfume />
+  <h2 class="kinks-guide__title" set:html={title} />
+  <ShareNudeButton text={kinks_guide["get-to-it"]} />
+</div>

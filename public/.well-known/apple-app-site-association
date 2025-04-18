@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "88W6ZD324S.com.flure.ios",
+        "paths": [
+          "/app/*",
+          "/wUIC/*"
+        ]
+      }
+    ]
+  }
+}

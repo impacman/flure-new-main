@@ -1,0 +1,68 @@
+{
+  "title": "Spotted in",
+  "items": [
+    {
+      "img": {
+        "src": "/images/spotted/gdi.png",
+        "alt": "Logo Gdi"
+      },
+      "link": "https://www.globaldatinginsights.com/news/the-gdi-podcast-flure-the-dating-app-empowering-female-users/"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/dazed.png",
+        "alt": "Logo Dazed"
+      },
+      "link": "https://www.dazeddigital.com/beauty/article/66148/1/we-can-t-look-away-from-our-split-and-severed-selves-severance"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/cosmopolitan.png",
+        "alt": "Logo Cosmopolitan"
+      },
+      "link": "https://www.cosmopolitan.com/sex-love/a28137017/sexting-apps/"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/disrupt.png",
+        "alt": "Logo Disrupt"
+      },
+      "link": "https://disruptmagazine.com/how-flures-female-driven-invitation-system-is-helping-women-find-peace-of-mind-online/"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/datingadvice.png",
+        "alt": "Logo Datingadvice"
+      },
+      "link": "https://www.datingadvice.com/for-women/sex-positive-dating-app-flure"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/vice.png",
+        "alt": "Logo Vice"
+      },
+      "link": "https://www.vice.com/en/article/gen-z-is-choosing-explorationships-over-traditional-relationships/"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/girltalkho.png",
+        "alt": "Logo Girltalkho"
+      },
+      "link": "https://www.girltalkhq.com/why-do-some-women-feel-awkward-talking-about-one-night-stands/"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/yourtango.png",
+        "alt": "Logo Yourtango"
+      },
+      "link": "https://www.yourtango.com/love/gen-z-says-relationships-out-explorationships-in"
+    },
+    {
+      "img": {
+        "src": "/images/spotted/glamour.png",
+        "alt": "Logo Glamour"
+      },
+      "link": "https://www.glamourmagazine.co.uk/article/labia-puffing-ozempic-vagina"
+    }
+  ]
+}

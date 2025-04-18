@@ -1,0 +1,62 @@
+---
+import "./styles.scss";
+
+import HeartWithWings from "../../../../svg/HeartWithWings";
+import MoneyWithWings from "../../../../svg/MoneyWithWings";
+import Camera from "../../../../svg/Camera";
+import HarePhotographer from "../../../../svg/HarePhotographer";
+import TurboAirplane from "../../../../svg/TurboAirplane";
+import FireHeart from "../../../../svg/FireHeart";
+import Corona from "../../../../svg/Corona";
+
+import Cloud from "../../../../svg/Cloud";
+
+const { data } = Astro.props;
+const { mod, items } = data;
+
+const SvgComponents = {
+  Default: "svg",
+  MoneyWithWings,
+  HeartWithWings,
+  Camera,
+  HarePhotographer,
+  TurboAirplane,
+  FireHeart,
+  Corona,
+} as const;
+
+const className = "dream-images";
+const classNameModificator = mod ? ` ${className}--${mod}` : null;
+---
+
+<div class={`${className}${classNameModificator}`}>
+  {
+    items.map(
+      (
+        {
+          src,
+          svg,
+          cloud,
+        }: {
+          src?: string;
+          svg?: keyof typeof SvgComponents;
+          cloud?: Boolean;
+        },
+        ind: number,
+      ) => {
+        const Tag =
+          svg && SvgComponents[svg]
+            ? SvgComponents[svg]
+            : SvgComponents["Default"];
+
+        return (
+          <div
+            class={`${className}__el${!svg ? ` ${className}__el--img` : ""}`}
+          >
+            {svg ? <Tag /> : <img src={`images/dream-job/${src}.gif`} alt="" />}
+          </div>
+        );
+      },
+    )
+  }
+</div>

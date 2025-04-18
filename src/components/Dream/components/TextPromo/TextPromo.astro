@@ -1,0 +1,31 @@
+---
+import "./styles.scss";
+
+import Title from "../../../Title";
+import Descr from "../Descr";
+import Btn from "../Btn";
+import Images from "../Images";
+import { WaveTextPromo } from "../../../../svg/Dream/Waves/Wave";
+
+const { data } = Astro.props;
+const { title, descr, images, btn, wave } = data;
+---
+
+<div class="dream-text-promo">
+  <div class="dream-text-promo__wrap">
+    {title && <Title title={title} />}
+    {descr && <Descr text={descr} />}
+    {btn && <Btn text={btn.text} link={btn.link} />}
+  </div>
+  {
+    images && (
+      <Images
+        data={{
+          mod: "promo",
+          ...images,
+        }}
+      />
+    )
+  }
+  {wave && <WaveTextPromo client:only="react" />}
+</div>

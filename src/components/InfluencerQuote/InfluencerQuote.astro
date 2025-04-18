@@ -1,0 +1,19 @@
+---
+import Descr from "../Descr";
+import "./styles.scss";
+
+const { color } = Astro.props;
+const { name, role, quote, img } = Astro.props.quote;
+---
+
+<div class="influencer-quote">
+  <div class={`influencer-quote__title ${color || ""}`}>
+    <img src={img} />
+    <span>
+      <span class="influencer-quote__name">{name + ","}&nbsp;</span>
+      <span class="influencer-quote__role" set:html={role} />
+    </span>
+  </div>
+
+  <Descr descr={{ text: `“${quote}”`, color }} />
+</div>

@@ -1,0 +1,26 @@
+.women {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+  &__wrap {
+    position: absolute;
+    z-index: 7;
+
+    @include des {
+      width: d(849);
+      height: d(458);
+      top: d(176);
+      right: d(-165);
+    }
+
+    @include mob {
+      width: m(423);
+      height: m(217);
+      top: m(314);
+      left: m(157);
+    }
+  }
+}

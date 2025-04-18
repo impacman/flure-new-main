@@ -1,0 +1,18 @@
+---
+import Layout404 from "../layouts/Layout404.astro";
+import Page404 from "../components/Page404";
+
+import ROUTES from "../routes";
+const rout = ROUTES["p404"];
+
+const metadata = {
+  title: "Flure Dating App | Meet & Chat with Like-Minded People",
+  descr:
+    "Welcome to Flure, a dating app that empowers you to embrace your true self and explore your desires. Meet and chat with like-minded people. Alone or with a partner.",
+  noScrollSmooth: true,
+};
+---
+
+<Layout404 metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme}>
+  <Page404 />
+</Layout404>

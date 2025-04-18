@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import KinksGuide from "../components/KinksGuide";
+
+import ROUTES from "../routes";
+const rout = ROUTES["kinks"];
+
+const metadata = {
+  title:
+    "List of Kinks and Fetishes: An A-to-Z Guide of Kinks and Fetishes You May Be Interested About",
+  descr:
+    "What kinds of kinks exist? What is a fetish? Explore the world of BDSM  with Flure’s Ultimate Guide.",
+};
+---
+
+<Layout
+  metadata={metadata}
+  pathname={rout.pathname}
+  bodyColor={rout.theme}
+  headerColor={rout.themeHeader}
+  statusBarColor={rout.themeStatusBar}
+>
+  <KinksGuide />
+</Layout>

@@ -1,0 +1,44 @@
+.dream-cinematic-romance {
+  position: relative;
+  width: 100%;
+  background-color: inherit;
+  overflow: hidden;
+
+  &__wrap {
+    width: 100%;
+    text-align: center;
+
+    @include des {
+      min-height: d(648);
+      padding: d(99) d(70) d(28);
+    }
+
+    @include mob {
+      min-height: m(430);
+      padding: m(72) m(11) m(64);
+    }
+  }
+
+  & .title {
+    font-family: var(--font-poppins);
+    font-weight: 200;
+
+    & b {
+      &:not(:last-of-type) {
+        font-weight: 700;
+      }
+
+      &:last-of-type {
+        font-weight: 300;
+      }
+    }
+
+    @include des {
+      font-size: d(130);
+    }
+
+    @include mob {
+      font-size: m(42);
+    }
+  }
+}

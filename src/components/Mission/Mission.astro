@@ -1,0 +1,25 @@
+---
+import "./styles.scss";
+
+import mission from "../../data/mission.json";
+
+const { title, descr } = mission;
+
+import Title from "../Title";
+import Descr from "../Descr";
+import Wave from "./Wave";
+import Rabbit from "../../svg/Rabbit";
+import Peoples from "../../svg/Peoples";
+---
+
+<section class="mission">
+  <Rabbit client:only="react" />
+  <Peoples client:only="react" />
+  <div class="mission__wrap">
+    <div class="mission__title">
+      <Title title={title} />
+    </div>
+    <Descr descr={descr} />
+  </div>
+  <Wave client:only="react" />
+</section>

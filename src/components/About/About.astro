@@ -1,0 +1,32 @@
+---
+import "./styles.scss";
+
+import about from "../../data/about.json";
+
+const { title, descr } = about;
+
+import Title from "../Title";
+import Descr from "../Descr";
+import AboutClouds from "../../svg/AboutClouds";
+import BigClouds from "../../svg/BigClouds";
+import We from "../../svg/We";
+import ScrollBtn from "../ScrollBtn";
+---
+
+<section class="about">
+  <ScrollBtn
+    client:only="react"
+    pathname={"/faq"}
+    position={"top"}
+    target={"mission"}
+  />
+  <We />
+  <AboutClouds client:only="react" />
+  <BigClouds client:only="react" />
+  <div class="about__wrap">
+    <div class="about__title">
+      <Title title={title} />
+    </div>
+    <Descr descr={descr} />
+  </div>
+</section>

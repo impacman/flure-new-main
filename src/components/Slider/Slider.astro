@@ -1,0 +1,142 @@
+---
+import "./styles.scss";
+
+import Blog from "./Content/Blog.astro";
+import Teams from "./Content/Teams.astro";
+import Navigation from "./Content/Navigation.astro";
+import ValuesApp from "./Content/ValuesApp.astro";
+import ValuesAppNav from "./Content/ValuesAppNav.astro";
+import Reviews from "./Content/Reviews.astro";
+
+const { id, items } = Astro.props;
+
+const Sliders = {
+  blog: Blog,
+  teams: Teams,
+  "values-app": ValuesApp,
+  reviews: Reviews,
+};
+
+const Tag = Sliders[id as keyof typeof Sliders];
+---
+
+<div class={`slider-${id} swiper swiper-${id}`} data-slider data-slider-id={id}>
+  <div class="swiper-wrapper">
+    {
+      items.map(
+        (
+          item: {
+            id: number;
+            name: string;
+            descr: string;
+            img: {
+              src: string;
+              tilda?: Boolean;
+              alt?: string;
+            };
+            svg?: Boolean;
+            link: string;
+            position: string;
+          },
+          ind: number,
+        ) => <Tag item={item} id={ind + 1} />,
+      )
+    }
+  </div>
+  {id === "teams" && <Navigation />}
+  {id === "values-app" && <ValuesAppNav items={items} />}
+</div>
+
+<script>
+  import Swiper from "swiper";
+  import { Mousewheel, FreeMode, EffectFade } from "swiper/modules";
+  import "swiper/css";
+
+  const sliders: NodeListOf<HTMLDivElement> =
+    document.querySelectorAll("[data-slider]");
+
+  const settings = {
+    default: {
+      grabCursor: true,
+    },
+    blog: {
+      modules: [Mousewheel],
+      mousewheel: true,
+      loop: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1.24,
+          centeredSlides: true,
+        },
+        576: {
+          slidesPerView: 5.5,
+          centeredSlides: false,
+        },
+      },
+    },
+    teams: {
+      modules: [FreeMode],
+      freeMode: true,
+      breakpoints: {
+        0: {
+          slidesPerView: "auto" as const,
+        },
+        576: {
+          slidesPerView: 2.13,
+        },
+      },
+    },
+    "values-app": {
+      modules: [EffectFade],
+      slidesPerView: 1,
+      effect: "fade",
+      loop: true,
+      grabCursor: false,
+    },
+    reviews: {
+      modules: [Mousewheel],
+      mousewheel: true,
+      loop: true,
+      centeredSlides: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1.25,
+          spaceBetween: "5%",
+        },
+        576: {
+          slidesPerView: "auto" as const,
+          spaceBetween: "3.5%",
+        },
+      },
+    },
+  };
+
+  sliders.forEach((el) => {
+    const id = el.dataset.sliderId;
+    const navigations: NodeListOf<HTMLButtonElement> =
+      el.querySelectorAll("[data-slider-nav]");
+    const pagination: NodeListOf<HTMLButtonElement> = el.querySelectorAll(
+      "[data-slider-pagination]",
+    );
+
+    const slider = new Swiper(el, {
+      ...settings.default,
+      ...settings[id as keyof typeof settings],
+      on: {
+        slideChange: ({ realIndex }) => {
+          pagination.forEach((el) => el.classList.remove("active"));
+          pagination[realIndex] &&
+            pagination[realIndex].classList.add("active");
+        },
+      },
+    });
+
+    navigations.forEach((el) => {
+      el.addEventListener("click", () => {
+        const id = el.dataset.sliderNav;
+
+        id === "next" ? slider.slideNext() : slider.slidePrev();
+      });
+    });
+  });
+</script>

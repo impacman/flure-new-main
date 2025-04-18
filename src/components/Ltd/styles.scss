@@ -1,0 +1,25 @@
+.ltd {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  font-family: var(--font-poppins);
+  z-index: 2;
+  font-weight: 300;
+
+  &--dark {
+    color: var(--black);
+  }
+
+  @include des {
+    font-size: d(18);
+    right: d(73);
+    bottom: d(36);
+    opacity: 0.37;
+  }
+
+  @include mob {
+    font-size: m(12);
+    left: m(33);
+    bottom: m(38);
+  }
+}

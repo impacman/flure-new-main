@@ -1,0 +1,73 @@
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: var(--font-poppins);
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    pointer-events: none;
+
+    @include des {
+      height: d(46.491);
+      margin-right: d(26.61);
+    }
+
+    @include mob {
+      height: m(24.97);
+      margin-right: m(10);
+    }
+
+    & svg {
+      width: inherit;
+      height: 100%;
+
+      & path {
+        fill: var(--black);
+        stroke: var(--black);
+
+        .logo--black &,
+        .logo--pink-black-light & {
+          fill: var(--white);
+          stroke: var(--white);
+        }
+      }
+    }
+  }
+
+  &__name {
+    position: relative;
+    z-index: 2;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: var(--black);
+    pointer-events: none;
+    transition: color 0.5s ease 0s;
+
+    .logo--black &,
+    .logo--pink-black-light & {
+      color: var(--white);
+    }
+
+    @include des {
+      font-size: d(46.491);
+      letter-spacing: d(13.947);
+    }
+
+    @include mob {
+      font-size: m(28);
+      letter-spacing: m(6.362);
+    }
+  }
+}

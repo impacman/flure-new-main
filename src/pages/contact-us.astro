@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Contact from "../components/Contact";
+
+import ROUTES from "../routes";
+const rout = ROUTES["contact"];
+
+const metadata = {
+  title: "Contact Us | Flure",
+  descr: "Contact us if you have any questions or feedback about Flure app.",
+};
+---
+
+<Layout metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme}>
+  <Contact />
+</Layout>

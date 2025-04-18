@@ -1,0 +1,25 @@
+---
+import "./styles.scss";
+
+import Title from "../../../Title";
+import Images from "../Images";
+
+const { data } = Astro.props;
+const { title, images } = data;
+---
+
+<div class="dream-cinematic-romance">
+  <div class="dream-cinematic-romance__wrap">
+    {title && <Title title={title} />}
+  </div>
+  {
+    images && (
+      <Images
+        data={{
+          mod: "cinematic",
+          ...images,
+        }}
+      />
+    )
+  }
+</div>

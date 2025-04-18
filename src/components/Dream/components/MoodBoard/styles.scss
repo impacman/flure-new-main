@@ -1,0 +1,159 @@
+.dream-mood-board {
+  position: relative;
+  width: 100%;
+  background-color: inherit;
+
+  @include des {
+    margin-top: d(-137.38);
+  }
+
+  @include mob {
+    margin-top: m(-138);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: var(--pink);
+    z-index: 3;
+
+    @include des {
+      height: d(20);
+      bottom: d(-10);
+    }
+
+    @include mob {
+      height: m(8);
+      bottom: m(-4);
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 4;
+  }
+
+  &__images {
+    width: 100%;
+    overflow: hidden;
+
+    @include des {
+      display: flex;
+      align-items: flex-start;
+      padding: d(54.38) 0 d(54.77);
+    }
+
+    @include mob {
+      height: m(289);
+    }
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 3;
+    }
+
+    &-el {
+      z-index: 9;
+      overflow: hidden;
+
+      @include des {
+        position: relative;
+        border-radius: d(25);
+      }
+
+      @include mob {
+        position: absolute;
+        border-radius: m(15);
+      }
+
+      &:nth-of-type(1) {
+        aspect-ratio: 1/1;
+        transform: rotate(8.566deg);
+
+        @include des {
+          width: d(395.58);
+          flex: 0 0 d(395.58);
+          margin: d(39) 0 0 d(-8.75);
+        }
+
+        @include mob {
+          z-index: 1;
+          top: m(56);
+          left: m(-8);
+          width: m(204.45);
+        }
+      }
+      &:nth-of-type(2) {
+        z-index: 4;
+        aspect-ratio: 1/1;
+        transform: rotate(-12.615deg);
+
+        @include des {
+          width: d(279.99);
+          flex: 0 0 d(279.99);
+          margin-top: d(126.12);
+        }
+
+        @include mob {
+          right: m(64);
+          bottom: 0;
+          width: m(144.71);
+        }
+      }
+      &:nth-of-type(3) {
+        z-index: 3;
+
+        @include des {
+          width: d(367.21);
+          height: d(463.15);
+          flex: 0 0 d(367.21);
+          margin: d(29.08) 0 0 d(-8.96);
+          transform: rotate(14.464deg);
+        }
+
+        @include mob {
+          top: 0;
+          right: m(-14.57);
+          width: m(150.28);
+          height: m(189.55);
+          transform: rotate(-8.385deg);
+        }
+      }
+      &:nth-of-type(4) {
+        z-index: 2;
+
+        @include des {
+          width: d(444);
+          height: d(240.63);
+          flex: 0 0 d(444);
+          margin-top: d(137.36);
+          transform: rotate(2.473deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+      &:nth-of-type(5) {
+        @include des {
+          width: d(444);
+          height: d(426.65);
+          flex: 0 0 d(444);
+          margin-left: d(-7.28);
+          transform: rotate(-9.709deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+  }
+}

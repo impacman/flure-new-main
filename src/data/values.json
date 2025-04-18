@@ -1,0 +1,53 @@
+{
+  "title": {
+    "type": "h2",
+    "text": "<span>O</span>ur values"
+  },
+  "items": [
+    {
+      "id": "1",
+      "position": "left",
+      "title": {
+        "type": "h5",
+        "text": "Safety"
+      },
+      "description": {
+        "text": "<b>Is our priority.</b> Feeling secure lets you have more fun!"
+      }
+    },
+    {
+      "id": "2",
+      "position": "right",
+      "title": {
+        "type": "h5",
+        "text": "Empowerment"
+      },
+      "description": {
+        "text": "We boost happiness and confidence in women,<br class='desktop'> letting them <b>control</b> their dating journey."
+      }
+    },
+    {
+      "id": "3",
+      "position": "left",
+      "title": {
+        "type": "h5",
+        "text": "Sex-positivity"
+      },
+      "description": {
+        "text": "<b>Be yourself</b>, dare to explore, and feel safe!"
+      }
+    },
+
+    {
+      "id": "4",
+      "position": "right",
+      "title": {
+        "type": "h5",
+        "text": "Inclusivity"
+      },
+      "description": {
+        "text": "Everyone <b>plays equally</b> at Flure!"
+      }
+    }
+  ]
+}

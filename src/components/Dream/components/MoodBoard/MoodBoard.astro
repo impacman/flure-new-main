@@ -1,0 +1,25 @@
+---
+import "./styles.scss";
+
+const { data } = Astro.props;
+const { images } = data;
+---
+
+<div class="dream-mood-board">
+  <div class="dream-mood-board__wrap">
+    {
+      images && (
+        <div class="dream-mood-board__images">
+          {images.map(({ src, format }: { src: string; format?: string }) => (
+            <div class="dream-mood-board__images-el">
+              <img
+                src={`images/dream-job/${src}.${format ? format : "gif"}`}
+                alt=""
+              />
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</div>

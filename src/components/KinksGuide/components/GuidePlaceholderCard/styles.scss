@@ -1,0 +1,62 @@
+.kinks-guide__placeholder-card-container { 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include des {
+    row-gap: d(40);
+    width: d(565);
+    height: d(685);
+  }
+
+  @include mob {
+    row-gap: m(27);
+    width: m(340);
+    height: m(412);
+  }
+
+  .kinks-guide__card {
+    position: absolute;
+    left: 0;
+
+    @include des {
+      width: d(565);
+      height: d(685);
+    }
+  
+    @include mob {
+      width: m(340);
+      height: m(412);
+    }
+  }
+
+  .kinks-guide__title {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+
+    @include des {
+      font-size: d(70);
+    }
+
+    @include mob {
+      font-size: m(43);
+    }
+  }
+
+  .share-nude-btn {
+    z-index: 2;
+    background-color: var(--black);
+    color: var(--white);
+
+    @include mob {
+      width: m(231);
+      height: m(62);
+      font-size: m(25);
+    }
+  }
+}
+

@@ -1,0 +1,24 @@
+.faq {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: inherit;
+
+  @include des {
+  }
+
+  @include mob {
+  }
+
+  &__wrap {
+    width: 100%;
+
+    @include des {
+      padding: d(254) d(135) d(162);
+    }
+
+    @include mob {
+      padding: m(107) m(25) m(25);
+    }
+  }
+}

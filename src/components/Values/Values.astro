@@ -1,0 +1,45 @@
+---
+import "./styles.scss";
+
+import values from "../../data/values.json";
+
+const { title, items } = values;
+
+import Title from "../Title";
+import Descr from "../Descr";
+
+import Safety from "../../svg/Safety";
+import Empowerment from "../../svg/Empowerment";
+import SexPositivity from "../../svg/SexPositivity";
+import Inclusivity from "../../svg/Inclusivity";
+
+import Wave from "./Wave";
+---
+
+<section class="values">
+  <div class="values__wrap">
+    <Title title={title} />
+    <div class="values__list">
+      {
+        items.map(({ id, title, description, position }) => (
+          <div
+            class={`values__list-item${
+              position ? ` values__list-item--${position}` : ""
+            }`}
+          >
+            <div class="values__list-wrap">
+              <Title title={title} />
+              <Descr descr={description} />
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <Safety client:only="react" />
+  <Empowerment />
+  <SexPositivity client:only="react" />
+  <Inclusivity />
+  <Wave client:only="react" />
+</section>

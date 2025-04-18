@@ -1,0 +1,170 @@
+.nav {
+  z-index: 9991;
+  background-color: var(--pink);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform-origin: bottom center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease 0s;
+
+  &.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  @include des {
+    padding: d(186) d(126) d(112);
+  }
+
+  @include tab {
+    padding: d(150) d(126) d(90);
+  }
+
+  @include mob {
+    padding: m(77) m(17) m(100);
+  }
+
+  &__svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    & .cloud {
+      position: absolute;
+
+      @include des {
+        width: d(var(--wd));
+        height: d(var(--hd));
+      }
+
+      @include mob {
+        width: m(var(--wm));
+        height: m(var(--hm));
+      }
+
+      &--1 {
+        @include des {
+          top: d(24);
+          right: d(370);
+        }
+
+        @include mob {
+          top: m(30);
+          left: m(208);
+        }
+      }
+
+      &--2 {
+        @include des {
+          top: d(236);
+          left: d(-300);
+        }
+
+        @include mob {
+          top: m(224);
+          right: m(88);
+        }
+      }
+
+      &--3 {
+        @include des {
+          top: d(315);
+          right: d(-100);
+        }
+
+        @include mob {
+        }
+      }
+
+      &--4 {
+        @include des {
+          left: d(342);
+          bottom: d(260);
+        }
+
+        @include mob {
+          left: m(180);
+          bottom: m(275);
+        }
+      }
+
+      &--5 {
+        @include des {
+          bottom: d(-160);
+          right: d(-160);
+        }
+
+        @include mob {
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 50%);
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include des {
+      justify-content: space-between;
+    }
+
+    @include mob {
+    }
+  }
+
+  &__links {
+    position: relative;
+    z-index: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include mob {
+      margin-bottom: m(13);
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    line-height: 98.5%;
+    text-transform: uppercase;
+    color: var(--black);
+    display: inline-block;
+
+    transition-property: color;
+    @include easy();
+
+    &--active {
+      pointer-events: none;
+      color: var(--mauve);
+    }
+
+    @include des {
+      font-size: d(80);
+      margin-bottom: d(44);
+    }
+
+    @include tab {
+      font-size: d(60);
+      margin-bottom: d(30);
+    }
+
+    @include mob {
+      font-size: m(50);
+      margin-bottom: m(19);
+    }
+  }
+}

@@ -1,0 +1,381 @@
+.dream-images {
+  position: absolute;
+  z-index: 19;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &--list-up {
+    z-index: 24;
+  }
+
+  & img,
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  & img {
+    object-fit: cover;
+  }
+
+  &__el {
+    position: absolute;
+    z-index: 9;
+    overflow: hidden;
+
+    &--img {
+      @include des {
+        border-radius: d(25);
+      }
+
+      @include mob {
+        border-radius: m(15);
+      }
+    }
+
+    &:nth-child(1) {
+      .dream-images--cinematic & {
+        transform: rotate(32.122deg);
+
+        @include des {
+          top: d(2);
+          left: d(502);
+          width: d(276.23);
+          height: d(138.98);
+        }
+
+        @include mob {
+          left: m(14.49);
+          bottom: 0;
+          width: m(130.92);
+          height: m(65.87);
+        }
+      }
+
+      .dream-images--video & {
+        transform: rotate(129.099deg);
+
+        @include des {
+          top: d(237);
+          left: d(306);
+          width: d(195.53);
+          height: d(144.43);
+        }
+
+        @include mob {
+          top: m(238.53);
+          left: m(97.78);
+          width: m(93.07);
+          height: m(68.75);
+        }
+      }
+
+      .dream-images--promo & {
+        @include des {
+          left: d(87);
+          bottom: d(57.23);
+          width: d(442.87);
+          height: d(222.46);
+          transform: rotate(33.324deg);
+        }
+
+        @include mob {
+          width: m(193.29);
+          height: m(100.45);
+          right: m(-0.36);
+          bottom: m(41);
+          transform: rotate(-23.981deg);
+        }
+      }
+
+      .dream-images--looking & {
+        @include des {
+          top: d(184);
+          left: d(79.29);
+          width: d(291.44);
+          height: d(294.12);
+          transform: rotate(-8.522deg);
+        }
+
+        @include mob {
+          top: m(584.54);
+          right: 0;
+          width: m(152.58);
+          height: m(153.98);
+          transform: rotate(-9.333deg);
+        }
+      }
+
+      .dream-images--list & {
+        transform: rotate(13.929deg);
+
+        @include des {
+          top: d(275.9);
+          left: d(-39.54);
+          width: d(321.72);
+          height: d(260);
+        }
+
+        @include mob {
+          top: m(-134);
+          left: m(-29.63);
+          width: m(222.55);
+          height: m(179.85);
+        }
+      }
+
+      .dream-images--list-up & {
+        transform: rotate(-112.201deg);
+
+        @include des {
+          right: d(146.38);
+          bottom: d(786.62);
+          width: d(175.08);
+          height: d(182.15);
+        }
+
+        @include mob {
+          top: m(127);
+          right: m(105.69);
+          width: m(110.47);
+          height: m(114.93);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .dream-images--cinematic & {
+        transform: rotate(23.752deg);
+
+        @include des {
+          top: d(265);
+          right: d(240);
+          width: d(153.21);
+          height: d(132.07);
+        }
+
+        @include mob {
+          top: m(11.86);
+          right: m(62.75);
+          width: m(63.03);
+          height: m(54.34);
+        }
+      }
+
+      .dream-images--video & {
+        transform: rotate(6.666deg);
+
+        @include des {
+          top: d(77.83);
+          right: d(271);
+          width: d(140.678);
+          height: d(130.838);
+        }
+
+        @include mob {
+          top: m(51.45);
+          right: m(86.19);
+          width: m(60.71);
+          height: m(56.46);
+        }
+      }
+
+      .dream-images--looking & {
+        @include des {
+          top: d(132);
+          right: d(-60.2);
+          width: d(377.09);
+          height: d(194.83);
+          transform: rotate(12.805deg);
+        }
+
+        @include mob {
+          top: m(16.82);
+          left: m(28.59);
+          width: m(207.45);
+          height: m(107.18);
+          transform: rotate(-9.769deg);
+        }
+      }
+
+      .dream-images--list & {
+        @include des {
+          top: d(726.68);
+          left: d(87.77);
+          width: d(298);
+          height: d(149.94);
+          transform: rotate(27.704deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .dream-images--looking & {
+        transform: rotate(14.092deg);
+
+        @include des {
+          top: d(607);
+          left: d(-24.36);
+          width: d(350.05);
+          height: d(212.69);
+        }
+
+        @include mob {
+          top: m(656.53);
+          left: m(-2.45);
+          width: m(196.07);
+          height: m(119.13);
+        }
+      }
+
+      .dream-images--list & {
+        @include des {
+          left: d(-14.21);
+          bottom: d(905.23);
+          width: d(265.24);
+          height: d(271.3);
+          transform: rotate(-5.688deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .dream-images--looking & {
+        transform: rotate(6.483deg);
+
+        @include des {
+          top: d(461);
+          right: d(57.03);
+          width: d(277.59);
+          height: d(277.59);
+        }
+
+        @include mob {
+          top: m(48.95);
+          right: m(28.84);
+          width: m(149.2);
+          height: m(149.2);
+        }
+      }
+
+      .dream-images--list & {
+        @include des {
+          left: d(-55);
+          bottom: d(110);
+          width: d(405.61);
+          height: d(451.6);
+          transform: rotate(-8.904deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .dream-images--looking & {
+        @include des {
+          top: d(917);
+          right: d(54.03);
+          width: d(357.64);
+          height: d(185.86);
+          transform: rotate(-23.981deg);
+        }
+
+        @include mob {
+          width: m(139.79);
+          height: m(72.65);
+          bottom: m(8.71);
+          left: m(13.42);
+          transform: rotate(33.649deg);
+        }
+      }
+
+      .dream-images--list & {
+        @include des {
+          top: d(261.09);
+          right: d(164.67);
+          width: d(255.8);
+          height: d(128.7);
+          transform: rotate(-13.505deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      .dream-images--list & {
+        @include des {
+          top: d(472.3);
+          right: d(60.3);
+          width: d(253.21);
+          height: d(244.03);
+          transform: rotate(-6.371deg);
+        }
+
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &:nth-child(7) {
+      .dream-images--list & {
+        transform: rotate(-9.569deg);
+
+        @include des {
+          right: d(-89.92);
+          bottom: d(861.32);
+          width: d(400);
+          height: d(225);
+        }
+
+        @include mob {
+          top: m(42);
+          right: m(-73.03);
+          width: m(277.01);
+          height: m(155.82);
+        }
+      }
+    }
+
+    &:nth-child(8) {
+      .dream-images--list & {
+        transform: rotate(-23.981deg);
+
+        @include des {
+          right: d(91.03);
+          bottom: d(274.48);
+          width: d(357.64);
+          height: d(185.86);
+        }
+
+        @include mob {
+          right: m(-11.48);
+          bottom: m(22.72);
+          width: m(166.76);
+          height: m(86.66);
+        }
+      }
+    }
+  }
+}

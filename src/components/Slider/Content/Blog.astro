@@ -1,0 +1,24 @@
+---
+const { item } = Astro.props;
+const { link, img, name } = item;
+---
+
+<div class="slider__item swiper-slide">
+  <div class="slider__item-wrap">
+    {link && <a target="_black" class="slider__item-link" href={link} />}
+    {
+      img && (
+        <div class="slider__item-img">
+          <img
+            src={!img.tilda ? `/images/blog/${img.src}.webp` : img.src}
+            alt={name ? name.replace(/<br>|"/g, "") : "Blog Img"}
+            loading="lazy"
+          />
+        </div>
+      )
+    }
+    <div class="slider__item-content">
+      {name && <div class="slider__item-name" set:html={name} />}
+    </div>
+  </div>
+</div>

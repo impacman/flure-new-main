@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Hello from "../components/Hello";
+import Spotted from "../components/Spotted";
+import ValuesApp from "../components/ValuesApp";
+import Reviews from "../components/Reviews";
+import Download from "../components/Download";
+
+import ROUTES from "../routes";
+const rout = ROUTES["home"];
+
+const metadata = {
+  title: "Flure Dating App | Meet & Chat with Like-Minded People",
+  descr:
+    "Welcome to Flure, a dating app that empowers you to embrace your true self and explore your desires. Meet and chat with like-minded people. Alone or with a partner.",
+};
+---
+
+<Layout metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme}>
+  <Hello />
+  <Spotted />
+  <ValuesApp />
+  <Reviews />
+  <Download />
+</Layout>

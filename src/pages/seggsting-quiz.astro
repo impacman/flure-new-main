@@ -1,0 +1,18 @@
+---
+import LayoutQuiz from "../layouts/LayoutQuiz.astro";
+
+import Quiz from "../components/Quiz";
+
+import ROUTES from "../routes";
+const rout = ROUTES["seggsting"];
+
+const metadata = {
+  title: "Flure Dating App | Test Your Flirty Texting Style",
+  descr:
+    "Test drive your flirty texting style and join Flure, a dating app that empowers you to embrace your true self and explore your desires. Meet and chat with like-minded people.",
+};
+---
+
+<LayoutQuiz metadata={metadata} bodyColor={rout.theme}>
+  <Quiz client:only="react" />
+</LayoutQuiz>

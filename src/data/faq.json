@@ -1,0 +1,509 @@
+{
+  "title": {
+    "type": "h1",
+    "color": "pink",
+    "text": "F<span>a</span>q"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "What is flure?",
+      "filter": "about",
+      "descr": {
+        "text": "Flure is a sex-positive dating app that brings pleasure to a new level. Our focus is on safety for women, while we are eager to bring more fun and playfulness into the dating game. We are a secure space to explore one’s fantasies and enjoy being the naughtiest version of oneself.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Who is the app for?",
+      "filter": "about",
+      "descr": {
+        "text": "Our community is non-judgmental and 100% inclusive, meaning that we welcome all individuals who share our values and agree with our basic rules. We are all about pleasures and playful discoveries of your soft spots. We provide a safe space to bring your fantasies to life. We value consent and upfront communication.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Is there an age limit for using the app?",
+      "filter": "about",
+      "descr": {
+        "text": "Yep, our app is for people over 18.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 4,
+      "title": "How do I set up a profile?",
+      "filter": "profile",
+      "descr": {
+        "text": "To set up a Flure profile, you must provide your name, email, and password. After that, answer our onboarding questions to represent your true self and find new connections more easily.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 4.1,
+      "title": "Why do I need to verify my profile?",
+      "filter": "profile",
+      "descr": {
+        "text": "We make sure everyone on Flure is real, so everyone passes a selfie verification step during the onboarding process. It is performed by an algorithm, so not a soul sees the selfie you’re sending on this step. All our users are verified. Safety is our priority.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Can I edit my profile?",
+      "filter": "profile",
+      "descr": {
+        "text": "Sure! You can then edit your profile, including your profile picture and interests. Just be open and honest so you have the best experience possible.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 6,
+      "title": "How do I change my relationship preference?",
+      "filter": "profile",
+      "descr": {
+        "text": "You can select your relationship preference during onboarding. If you wish to change it, simply access your profile settings. Tap your profile icon, click the edit button near your name, click on 'Relationship Preference,' and choose the option that suits you best.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 7,
+      "title": "How can I choose who I see in the app?",
+      "filter": "conn",
+      "descr": {
+        "text": "Whoever you’re interested in! We offer a variety of filters that you can customize to find people who match your specific criteria. You can also edit the “Looking For” section on your profile to refine the matching.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 8,
+      "title": "How do I connect with someone?",
+      "filter": "conn",
+      "descr": {
+        "text": "To start the process, like the person you want to connect with, and if it’s mutual, brace yourself for some swoon-worthy messages.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 9,
+      "title": "How do I message someone?",
+      "filter": "conn",
+      "descr": {
+        "text": "In the 'Want to Meet' tab, you'll find members who want to connect with you. If the interest spark is mutual, like them back and start a conversation!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 9.1,
+      "title": "What is a selfie in chats?",
+      "filter": "conn",
+      "descr": {
+        "text": "We highly recommend showing your face once you start a chat with someone new! That’s how trust is built.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 9.2,
+      "title": "Can I set a certain amount of time the photo/video is visible?",
+      "filter": "conn",
+      "descr": {
+        "text": "You can set any photo or video to self-destruct after being seen. You can choose the media lifetime right before you send it to the chat. That also goes for a number of views: one vs unlimited.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 9.3,
+      "title": "What is a “Little too hot” photo?",
+      "filter": "conn",
+      "descr": {
+        "text": "We value safety and privacy, so when a photo shows a bit too much, we blur it and make the full-pixeled version available only to one’s contacts.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 10,
+      "title": "What is flure bunny chat in my chats?",
+      "filter": "conn",
+      "descr": {
+        "text": "Flure Bunny is your trusty chat sidekick and partner-in-fun. Occasionally, they offer advice, share trending reads, reveal dating secrets, and entertain you. You'll find them in their chat channel right in your chats. All to make your dating journey an easy ride!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Where can I use the app?",
+      "filter": "conn",
+      "descr": {
+        "text": "Select your current location or explore our Pleasure Universe  to connect with people worldwide. If you are planning to find someone for a vacation fling in a specific city, you can get Premium and browse worldwide!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 12,
+      "title": "What is Pleasure Universe?",
+      "filter": "conn",
+      "descr": {
+        "text": "Pleasure Universe is an exciting space that allows users to connect with amazing people from all corners of the globe. Say goodbye to being limited by your city — Pleasure Universe opens up a new world of dating with no boundaries, where self-discovery and global connections come to life! Chat with incredible individuals from different cities and enjoy exploring.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Can I change my location to Pleasure Universe?",
+      "filter": "conn",
+      "descr": {
+        "text": "Yes, you can easily switch between your actual location and the Pleasure Universe, exploring the best of both dating worlds. To change your location, tap on the filters in the top right corner of your Explore screen. Select “Location“, then choose “Pleasure Universe“",
+        "color": "white"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Can I delete a chat?",
+      "filter": "conn",
+      "descr": {
+        "text": "No, but this feature will be available soon enough.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 15,
+      "title": "What is flure sparks game?",
+      "filter": "conn",
+      "descr": {
+        "text": "Flure Sparks Game is an icebreaker chat game designed to infuse excitement into your conversations and transform dull chats into engaging ones. It helps you get to know your matches better and uncover their habits and desires. This game is entirely free and accessible to all users in their chats.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 16,
+      "title": "How do I play flure sparks game?",
+      "filter": "conn",
+      "descr": {
+        "text": "Visit your chats and select a match with whom you've exchanged at least one message on both sides and got a reply. You'll then see an icon with cards on the right side of your message input. Tap it to invite your match to play Flure Sparks Game. Prepare for an exciting blend of casual and spicier questions that will help you get to know each other better. The rules are simple:",
+        "color": "white"
+      },
+      "list": [
+        {
+          "id": 1,
+          "text": "Invite to Play: If your partner agrees, the game starts."
+        },
+        {
+          "id": 2,
+          "text": "Their Turn: Your partner answers a card question."
+        },
+        {
+          "id": 3,
+          "text": "Your Turn: It's your turn to answer after that."
+        },
+        {
+          "id": 4,
+          "text": "Skip: If you prefer to skip, your partner goes next."
+        },
+        {
+          "id": 5,
+          "text": "You can end the game at any time."
+        }
+      ]
+    },
+    {
+      "id": 16.1,
+      "title": "Can I invite my partner to Flure?",
+      "filter": "conn",
+      "descr": {
+        "text": "Sure, darling! The more the merrier! Add your partner on Flure during the onboarding or invite them to join after you have created your profile and passed the verification process. You can invite unlimited people as your partners and manage your profile and relationships according to your preferences!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 17,
+      "title": "How can I report or block someone?",
+      "filter": "wrong",
+      "descr": {
+        "text": "You can do it by clicking on the three dots in the chat header with this person.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 18,
+      "title": "How do I report abuse or a scam?",
+      "filter": "wrong",
+      "descr": {
+        "text": "Your safety is our top priority. To report a suspicious profile, tap 'Report abuse or scam' and specify your reason for reporting: Abusive behavior, Fake profile, Duplicate profile, Scam or spam, Inappropriate content, or Underage user. Our team will review your request within 24 hours. The reported user's account will be blocked, ensuring you won't encounter it again.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 19,
+      "title": "What to do if I accidentally block someone?",
+      "filter": "wrong",
+      "descr": {
+        "text": "We're sorry to say that if you block someone, you won't be able to continue communication with them. We know it's like burning bridges with no chance of rebuilding. So, before you go all 'block happy,' think twice and use your power responsibly.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 20,
+      "title": "How can I change my password?",
+      "filter": "wrong",
+      "descr": {
+        "text": "Just follow these simple steps:",
+        "color": "white"
+      },
+      "list": [
+        {
+          "id": 1,
+          "text": "Log out of your account."
+        },
+        {
+          "id": 2,
+          "text": "Click on 'Join with email'."
+        },
+        {
+          "id": 3,
+          "text": "Click on 'Reset password'."
+        },
+        {
+          "id": 4,
+          "text": "Enter your email address and then check your inbox for an email with instructions on how to proceed."
+        },
+        {
+          "id": 5,
+          "text": "Confirm your email address by following the instructions in the email."
+        },
+        {
+          "id": 6,
+          "text": "You will then be redirected back to the app, where you can create a new password. <br><br>That's it!"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "How do I change my profile picture?",
+      "filter": "profile",
+      "descr": {
+        "text": "Ready to freshen up your profile and show off your best self? It's as easy as clicking on the plus sign, snapping a photo, or selecting one from your camera roll! You'll be able to choose which photo is your main one and delete any that don't make the cut.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 22,
+      "title": "How do I report a technical issue?",
+      "filter": "wrong",
+      "descr": {
+        "text": "You can do this through Contact support in your profile or write to us by email at support@flure.com",
+        "color": "white"
+      }
+    },
+    {
+      "id": 23,
+      "title": "Do I have to pay to use flure?",
+      "filter": "wrong",
+      "descr": {
+        "text": "Absolutely not! We believe that nothing this good should come at a cost. Our app lets you build connections and meet new people, all for free. Head to the App Store or Google Play and join our community.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 24,
+      "title": "What is a premium subscription?",
+      "filter": "sub",
+      "descr": {
+        "text": "Embrace the world of exclusive perks and join Flure's inner circle with a premium subscription! You can connect with popular users, see who viewed your profile, track message read status, stay updated on others' 'last seen' status, and connect with users from different cities. As a bonus, active Premium users receive 50 free Vibes every day you use the app, and can send 30 extra likes daily.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 25,
+      "title": "What are vibes, and how can I use them?",
+      "filter": "sub",
+      "descr": {
+        "text": "To ensure that our community remains a non-judgmental and inclusive environment, we have rules that all users must follow. However, sometimes fate doesn't play by the rules. That's where Vibes come in. With Vibes, you'll enjoy the power to send follow-up messages, super likes, and flash messages and boost your profile, making your dating adventure even more exciting. It's all about making your Flure experience top-notch!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 26,
+      "title": "What are flash messages, and how can I use them?",
+      "filter": "sub",
+      "descr": {
+        "text": "Discover the power of instant connection with Flash Messages! Take control of your fate and bypass the waiting game. Just tap the Like button on a user you're interested in, locate the Flash Message icon, and send a message instantly for only 4 Vibes. Please be aware that Vibes will be deducted after sending the message. Following the Flash Message, all other messaging in the chat adheres to the standard logic.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 27,
+      "title": "What are super likes, and how can I use them?",
+      "filter": "sub",
+      "descr": {
+        "text": "Super Likes significantly enhance your chances of grabbing someone's attention and fostering a lasting connection. They empower you to soar to the top of someone's matches list, making it easier to catch the eye of that special someone. This feature acts as your golden ticket to stand out from the crowd of those who simply send regular likes.\n\nTo send a Super Like, simply tap the Like button on a user you're interested in, locate the Super Like icon, and send it instantly for only 2 Vibes. Remember, you can send only 1 Super Like per user, so make each one count in your quest for meaningful connections!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 28,
+      "title": "Can I see who viewed my profile?",
+      "filter": "profile",
+      "descr": {
+        "text": "If you have a Premium account, you can see users who have visited your profile. You need Premium access to see all the info about your profile visitors and send them a Like or a Super Like.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 29,
+      "title": "What are mutual likes?",
+      "filter": "conn",
+      "descr": {
+        "text": "Every user can send a different user one free Mutual Like. You can send a Mutual Like to every user who sent you a Like or a Super Like. After sending them a Mutual Like, you can start chatting with them right away or wait for their response if you feel shy.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 30,
+      "title": "Who is anna ai?",
+      "filter": "sub",
+      "descr": {
+        "text": "Anna is Flure’s very own hot pansexual AI character who’ll be happy to get to know you! You are free to like and chat with her on any topic. Joi is an open-minded soul who always looks forward to e-meeting new people and exploring desires together. While conversations with Anna are entirely free, you may need vibes for the sexting option.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 31,
+      "title": "What is the profile check status?",
+      "filter": "profile",
+      "descr": {
+        "text": "You can join Flure immediately with a Premium subscription or after passing a verification. If your profile check is pending, it means that we are looking to see whether your profile matches our criteria and that there’s a queue due to high demand. Click 'Continue with Premium' after completing onboarding to enter our community instantly, or wait for your profile status update: we will let you know when you’re in!<br><br>While your profile is in moderation, you can see this status at the top of the screen. We will notify you when you are ready to go on an adventure!",
+        "color": "white"
+      }
+    },
+    {
+      "id": 32,
+      "title": "Can my profile be declined?",
+      "filter": "profile",
+      "descr": {
+        "text": "Your profile can be declined during moderation. It happens, yes. We value our community and we want to keep it safe and comfortable for everyone. Here are the reasons why we can decline your profile:",
+        "color": "white"
+      },
+      "list": [
+        {
+          "id": 1,
+          "text": "Make sure the verification photo meets the requirements."
+        },
+        {
+          "id": 2,
+          "text": "Ensure a clear face in the verification photo."
+        },
+        {
+          "id": 3,
+          "text": "Check for good lighting in the verification photo."
+        },
+        {
+          "id": 4,
+          "text": "Confirm the face is identifiable in the photo."
+        },
+        {
+          "id": 5,
+          "text": "Verify profile photos comply with rules."
+        },
+        {
+          "id": 6,
+          "text": "Confirm at least one main photo meets the requirements."
+        },
+        {
+          "id": 7,
+          "text": "Ensure there is one person in each photo."
+        },
+        {
+          "id": 8,
+          "text": "Check appropriate clothes in photos."
+        },
+        {
+          "id": 9,
+          "text": "Confirm person matches the verification photo."
+        },
+        {
+          "id": 10,
+          "text": "Check that all photos meet general requirements."
+        },
+        {
+          "id": 11,
+          "text": "Ensure there are no fully naked photos."
+        },
+        {
+          "id": 12,
+          "text": "Ensure there are no children in the photos."
+        },
+        {
+          "id": 13,
+          "text": "Check for additional moderation requirements."
+        },
+        {
+          "id": 14,
+          "text": "Add a smiling photo and several other shots."
+        },
+        {
+          "id": 15,
+          "text": "Enable geolocation for a better experience."
+        },
+        {
+          "id": 16,
+          "text": "Fill the 'What are you looking for' field."
+        },
+        {
+          "id": 17,
+          "text": "If filled, ensure content is respectful."
+        },
+        {
+          "id": 18,
+          "text": "Indicate your interests for better connections. <br><br>To complete the verification process, make the necessary changes in your profile or continue with the Premium subscription."
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "title": "If my profile was declined, can I try again?",
+      "filter": "profile",
+      "descr": {
+        "text": "Sure! You can pass the onboarding process again if your profile is declined. Number of attempts is unlimited. Make sure it matches our community guidelines and we will be happy to review it for you once again. The photo verification and moderation process takes a while, but we'll notify you of the result. Alternatively, subscribe as a Premium member to join Flure.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 34,
+      "title": "How do I cancel my subscription?",
+      "filter": "sub",
+      "descr": {
+        "text": "To cancel your subscription, please follow these steps:<br/><br/>For Subscriptions Paid with Google Pay or Apple Pay: You can manage or cancel your subscription directly through the Google Play Store or Apple App Store under your account’s subscriptions settings.<br/><br/>For Subscriptions Paid by Card: If you paid with a credit or debit card, you can cancel your subscription by logging into your account on our website. Navigate to the \"Payment Settings\" in \"My Profile\" section, where you’ll find the option to cancel.<br/><br/>Please note: Cancelling your subscription will prevent future billing, but you will retain access until the end of your current billing cycle.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 35,
+      "title": "What payment methods do you accept?",
+      "filter": "sub",
+      "descr": {
+        "text": "We accept payments that are connected to your Store account. We do not accept payments that are made via third-party (ex. PayPal, Cash App)",
+        "color": "white"
+      }
+    },
+    {
+      "id": 36,
+      "title": "How do I change my payment details or payment method?",
+      "filter": "sub",
+      "descr": {
+        "text": "All the payment details are managed through your AppStore or Google Play — choose the most comfortable or completely new payment method.",
+        "color": "white"
+      }
+    },
+    {
+      "id": 37,
+      "title": "How can I restore my purchase?",
+      "filter": "sub",
+      "descr": {
+        "text": "When purchasing Vibes or Premium Subscription, you will be offered the option to restore purchases.",
+        "color": "white"
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+---
+import OverYou from "./ValuesApp/OverYou.astro";
+import Stay from "./ValuesApp/Stay.astro";
+import Eggplan from "./ValuesApp/Eggplan.astro";
+import Tags from "./ValuesApp/Tags.astro";
+import Message from "./ValuesApp/Message.astro";
+import Card from "./ValuesApp/Card.astro";
+import Timer from "./ValuesApp/Timer.astro";
+
+const { item } = Astro.props;
+const { video, title, descr, top, bottom } = item;
+
+const { SvgOverYou, SvgEggplant, card: CardTop, timer: TimerTop } = top;
+const { SvgStay, tags: TagsBottom, message: MessageBottom } = bottom;
+
+const obj: any = {
+  OverYou,
+  Stay,
+  Eggplan,
+  Tags,
+  Message,
+  Card,
+  Timer,
+};
+---
+
+<div class="slider__item swiper-slide">
+  <div class="slider__item-wrap">
+    {
+      video && (
+        <div class="slider__item-phone">
+          <div class="phone">
+            <div class="phone__fire">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="391"
+                height="253"
+                viewBox="0 0 391 253"
+                fill="none"
+              >
+                <path
+                  d="M9.76563 161.989C22.467 192.749 22.446 210.511 20.8512 219.374C20.7939 219.693 21.0358 219.982 21.3588 219.958C24.5868 219.715 32.7373 217.619 35.783 208.528C39.867 196.338 39.1012 64.3221 35.783 61.7285C32.4647 59.1349 29.657 53.4289 31.699 45.1293C33.741 36.8296 31.9542 24.1209 22.7653 17.6368C15.9136 12.802 6.31231 4.88789 1.52574 0.824687C1.17302 0.525272 0.658727 0.803302 0.756852 1.25544C2.45362 9.07379 12.647 18.5555 14.3421 25.9365C16.129 33.7174 8.47146 40.2015 4.38747 58.0975C0.303487 75.9936 5.93705 82.5988 9.76563 103.867C13.5942 125.134 1.95097 143.063 9.76563 161.989Z"
+                  fill="var(--mauve)"
+                />
+                <path
+                  d="M194.004 53.3078C188.238 56.4361 214.806 87.9463 180.982 101.25C180.771 101.333 180.623 101.537 180.64 101.763C184.439 152.351 229.793 252.73 369.947 253C370.246 253 370.492 252.728 370.47 252.429C367.012 206.151 380.05 210.941 380.05 195.033C380.05 156.904 397.555 149.818 388.297 133.459C378.025 115.307 379.98 90.1572 381.633 71.1542C383.286 52.1511 369.107 49.5072 367.619 36.2877C365.881 19.7801 374.356 11.1166 378.01 6.69356C378.281 6.36538 378.047 5.91346 377.63 5.99884C373.62 6.81978 366.26 11.8987 361.3 17.9457C354.522 26.2079 356.587 53.3078 343.808 53.3078C333.284 53.3078 326.131 84.4774 327.93 88.6696C328.14 89.1598 328.031 88.8836 327.5 88.9351C317.34 89.9206 329.099 56.2952 316.676 51.7627C302.185 48.1101 291.993 29.6189 296.974 19.4007C297.196 18.9441 296.736 18.407 296.285 18.6397C283.211 25.3793 286.489 46.9804 277.901 47.9945C270.547 48.8628 268.547 41.5479 266.08 36.2877C261.526 26.5793 255.584 21.3941 251.758 19.1223C251.271 18.8329 250.791 19.4959 251.121 19.9562C253.81 23.7011 256.564 30.8179 254.839 40.0883C252.194 54.2993 241.068 48.5836 242.556 35.0337C243.674 24.8525 240.656 15.515 235.253 11.6796C234.876 11.4119 234.365 11.79 234.421 12.2491C234.95 16.654 233.528 26.5847 227.727 25.8774C218.93 24.8048 218.19 13.0655 221.897 1.24476C222.037 0.79883 221.565 0.412894 221.17 0.662665C207.97 9.00892 214.722 28.4824 210.7 39.0968C206.567 50.0029 199.79 50.1681 194.004 53.3078Z"
+                  fill="var(--mauve)"
+                />
+              </svg>
+            </div>
+            <div class="phone__video">
+              <video
+                autoplay
+                loop
+                muted
+                playsinline
+                style="width: 100%; height: 100%;"
+              >
+                <source src={video} type="video/mp4" />
+              </video>
+            </div>
+            {SvgEggplant &&
+              (() => {
+                const Com = obj.Eggplan;
+                return <Com />;
+              })}
+            {SvgOverYou &&
+              (() => {
+                const Com = obj.OverYou;
+                return <Com />;
+              })}
+            {SvgStay &&
+              (() => {
+                const Com = obj.Stay;
+                return <Com />;
+              })}
+            {TagsBottom &&
+              (() => {
+                const Com = obj.Tags;
+                return <Com tags={TagsBottom} />;
+              })}
+            {MessageBottom &&
+              (() => {
+                const Com = obj.Message;
+                return <Com message={MessageBottom} />;
+              })}
+            {CardTop &&
+              (() => {
+                const Com = obj.Card;
+                return <Com card={CardTop} />;
+              })}
+            {TimerTop &&
+              (() => {
+                const Com = obj.Timer;
+                return <Com timer={TimerTop} />;
+              })}
+          </div>
+        </div>
+      )
+    }
+    {
+      title && (
+        <>
+          <div class="slider__item-water">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="87"
+              height="71"
+              viewBox="0 0 87 71"
+              fill="none"
+            >
+              <path
+                d="M64.6293 14.1265C78.8074 29.5968 85.2398 57.9613 86.6837 70.2098C83.2602 57.6 69.3495 44.2296 49.8478 30.1271C30.346 16.0247 31.4462 7.28823 34.2642 3.80752C37.0823 0.326816 46.9066 -5.21129 64.6293 14.1265Z"
+                fill="var(--mauve)"
+              />
+              <path
+                d="M21.1588 45.3911C41.5095 45.0538 59.4306 61.4233 65.8472 69.6501C64.5907 68.8066 59.0949 66.5935 47.1639 64.4898C32.2501 61.8602 30.4575 71.047 12.7033 70.6119C-5.05087 70.1768 -4.27964 45.8126 21.1588 45.3911Z"
+                fill="var(--mauve)"
+              />
+            </svg>
+          </div>
+          <h2 class="slider__item-title">
+            {title.map((text: string) => (
+              <span>{text}</span>
+            ))}
+          </h2>
+        </>
+      )
+    }
+    {
+      descr && (
+        <p class="slider__item-descr">
+          {descr.map((text: string) => (
+            <span>{text}</span>
+          ))}
+        </p>
+      )
+    }
+  </div>
+</div>

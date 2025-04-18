@@ -1,0 +1,58 @@
+---
+import "./styles.scss";
+
+import { WaveVideo } from "../../../../svg/Dream/Waves";
+import Title from "../../../Title";
+import Images from "../Images";
+import Player from "./Player";
+
+const { data } = Astro.props;
+const { title, descr, images } = data;
+---
+
+<div class="dream-video">
+  <div class="dream-video__bg">
+    <Player client:only="react" />
+  </div>
+  <div class="dream-video__wrap">
+    {
+      title && (
+        <div class="dream-video__title">
+          <Title title={title} />
+        </div>
+      )
+    }
+    {
+      descr && (
+        <div class="dream-video__descr">
+          <p set:html={descr} />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="36"
+            height="37"
+            viewBox="0 0 36 37"
+            fill="none"
+          >
+            <path
+              d="M17.8647 2L17.8647 35.4624M17.8647 35.4624C14.4188 35.4344 14.0842 19.4692 1.99886 19.4691M17.8647 35.4624C21.2782 35.4344 22.4493 19.4692 33.7305 19.4692"
+              stroke="var(--white)"
+              stroke-width="2.76358"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      )
+    }
+  </div>
+  {
+    images && (
+      <Images
+        data={{
+          mod: "video",
+          ...images,
+        }}
+      />
+    )
+  }
+  <WaveVideo client:only="react" />
+</div>

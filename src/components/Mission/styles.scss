@@ -1,0 +1,65 @@
+.mission {
+  position: relative;
+  width: 100vw;
+  background-color: var(--black);
+  overflow: hidden;
+
+  @include des {
+  }
+
+  @include mob {
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include des {
+      padding: d(206) d(135) d(655);
+    }
+
+    @include mob {
+      padding: m(144) m(26) m(413);
+    }
+  }
+
+  &__title {
+    @include des {
+      margin-bottom: d(22);
+    }
+
+    @include mob {
+    }
+  }
+
+  & .wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--top {
+      @include mob {
+        height: m(63);
+        top: m(-2);
+      }
+    }
+
+    &--bottom {
+      @include des {
+        height: d(147);
+        bottom: d(-2);
+      }
+
+      @include mob {
+        height: m(50);
+        bottom: m(-2);
+      }
+    }
+  }
+}

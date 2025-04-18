@@ -1,0 +1,11 @@
+---
+import "./styles.scss";
+
+import LogoAnimation from "../LogoAnimation";
+
+const { bodyColor } = Astro.props;
+---
+
+<div class={`preloader preloader--${bodyColor}`} data-preloader>
+  <LogoAnimation client:only="react" />
+</div>

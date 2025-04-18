@@ -1,0 +1,117 @@
+.clouds--hello {
+  & .cloud {
+    position: absolute;
+    z-index: 1;
+
+    &__wrap {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include des {
+      width: d(var(--wd));
+      height: d(var(--hd));
+    }
+
+    @include mob {
+      width: m(var(--wm));
+      height: m(var(--hm));
+    }
+
+    &--1 {
+      @include des {
+        top: d(87);
+        right: d(298);
+      }
+
+      @include mob {
+        top: m(119);
+        left: m(-152);
+      }
+    }
+
+    &--2 {
+      @include des {
+        bottom: d(268);
+        left: d(-321);
+      }
+
+      @include mob {
+        top: m(256);
+        right: m(-234);
+      }
+    }
+
+    &--3 {
+      @include des {
+        bottom: d(145);
+        right: d(-93);
+      }
+
+      @include mob {
+        bottom: m(114);
+        left: m(-223);
+      }
+    }
+
+    &--4 {
+      @include des {
+        bottom: d(-117);
+        left: d(98);
+      }
+
+      @include mob {
+        bottom: m(-24);
+        right: m(-138);
+      }
+    }
+
+    &-svg-1 {
+      position: absolute;
+      z-index: -1;
+
+      & svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include des {
+        width: d(164);
+        height: d(294);
+        right: d(239);
+        bottom: d(246);
+      }
+
+      @include mob {
+        width: m(82);
+        height: m(145);
+        right: m(36);
+        bottom: m(12);
+      }
+    }
+
+    &-svg-2 {
+      position: absolute;
+      z-index: 4;
+
+      & svg {
+        width: 100%;
+        height: 100%;
+      }
+
+      @include des {
+        width: d(345);
+        height: d(170);
+        left: d(58);
+        bottom: d(402);
+      }
+
+      @include mob {
+        width: m(145);
+        height: m(72);
+        top: m(93);
+        left: m(45);
+      }
+    }
+  }
+}

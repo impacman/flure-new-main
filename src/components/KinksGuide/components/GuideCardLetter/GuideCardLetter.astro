@@ -1,0 +1,65 @@
+---
+import {
+  ALetter,
+  BLetter,
+  CLetter,
+  DLetter,
+  ELetter,
+  FLetter,
+  GLetter,
+  HLetter,
+  ILetter,
+  JLetter,
+  KLetter,
+  LLetter,
+  MLetter,
+  NLetter,
+  OLetter,
+  PLetter,
+  QLetter,
+  RLetter,
+  SLetter,
+  TLetter,
+  ULetter,
+  VLetter,
+  WLetter,
+  XLetter,
+  YLetter,
+  ZLetter,
+} from "../../../../svg/Alphabet";
+
+interface Props {
+  letter: string;
+}
+
+const { letter } = Astro.props;
+---
+
+<div class="kinks-guide__letter-image">
+  {letter === "A" && <ALetter />}
+  {letter === "B" && <BLetter />}
+  {letter === "C" && <CLetter />}
+  {letter === "D" && <DLetter />}
+  {letter === "E" && <ELetter />}
+  {letter === "F" && <FLetter />}
+  {letter === "G" && <GLetter />}
+  {letter === "H" && <HLetter />}
+  {letter === "I" && <ILetter />}
+  {letter === "J" && <JLetter />}
+  {letter === "K" && <KLetter />}
+  {letter === "L" && <LLetter />}
+  {letter === "M" && <MLetter />}
+  {letter === "N" && <NLetter />}
+  {letter === "O" && <OLetter />}
+  {letter === "P" && <PLetter />}
+  {letter === "Q" && <QLetter />}
+  {letter === "R" && <RLetter />}
+  {letter === "S" && <SLetter />}
+  {letter === "T" && <TLetter />}
+  {letter === "U" && <ULetter />}
+  {letter === "V" && <VLetter />}
+  {letter === "W" && <WLetter />}
+  {letter === "X" && <XLetter />}
+  {letter === "Y" && <YLetter />}
+  {letter === "Z" && <ZLetter />}
+</div>

@@ -1,0 +1,76 @@
+.scroll-btn {
+  position: absolute;
+  z-index: 999;
+  border-style: solid;
+  border-color: var(--transparent);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include des {
+    width: d(60);
+    height: d(60);
+    border-radius: d(23);
+    border-width: d(1);
+  }
+
+  @include mob {
+    width: m(28);
+    height: m(28);
+    border-radius: m(11);
+    border-width: m(1);
+  }
+
+  &--dark {
+    background-color: var(--black);
+  }
+
+  &--light {
+    background-color: var(--mauve);
+  }
+
+  &--top {
+    @include des {
+      bottom: d(57);
+      right: d(50);
+    }
+
+    @include mob {
+      bottom: m(53);
+      right: m(16);
+    }
+
+    & svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  &--bottom {
+    @include des {
+      top: d(322);
+      right: d(47);
+    }
+
+    @include mob {
+      top: m(205);
+      right: m(18);
+    }
+
+    & svg {
+      transform: rotate(90deg);
+    }
+  }
+
+  & svg {
+    @include des {
+      width: d(35);
+      height: d(38);
+    }
+
+    @include mob {
+      width: m(17);
+      height: m(19);
+    }
+  }
+}

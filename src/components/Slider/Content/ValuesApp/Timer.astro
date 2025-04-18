@@ -1,0 +1,42 @@
+---
+const { timer } = Astro.props;
+const { text, img } = timer;
+---
+
+<div class="phone__timer">
+  <div class="phone__timer-bg">
+    <img src={img} alt="" />
+  </div>
+  <div class="phone__timer-svg">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="30"
+      height="29"
+      viewBox="0 0 30 29"
+      fill="none"
+    >
+      <path
+        d="M11.8975 18.0976V17.0993L14.865 12.8521H16.3443V16.9904H17.1429V18.0976H16.3443V19.3862H15.0738V18.0976H11.8975ZM15.1554 14.2134L13.295 16.9904H15.1554V14.2134Z"
+        fill="var(--white)"></path>
+      <circle
+        cx="14.7015"
+        cy="15.9014"
+        r="9.29602"
+        stroke="var(--white)"
+        stroke-width="1.24186"></circle>
+      <path
+        d="M23.8083 7.87781L25.1219 9.56494"
+        stroke="var(--white)"
+        stroke-width="1.24186"
+        stroke-linecap="round"></path>
+      <path
+        d="M11.8352 3.72815H17.7223"
+        stroke="var(--white)"
+        stroke-width="1.24186"
+        stroke-linecap="round"></path>
+    </svg>
+  </div>
+  <p class="phone__timer-text">
+    {text}
+  </p>
+</div>

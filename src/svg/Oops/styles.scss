@@ -1,0 +1,34 @@
+.oops {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  pointer-events: none;
+
+  &__svg {
+    position: absolute;
+    z-index: 6;
+    transform: translateX(-100%);
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include des {
+      width: d(294);
+      height: d(660);
+      top: d(1100);
+      left: d(0);
+    }
+
+    @include mob {
+      width: m(135);
+      height: m(274);
+      top: m(890);
+      left: m(-5);
+    }
+  }
+}

@@ -1,0 +1,85 @@
+---
+import "./styles.scss";
+
+import { WaveList } from "../../../../svg/Dream/Waves/Wave";
+import Clouds from "../../../../svg/Dream/Clouds";
+import Images from "../Images";
+
+const { data } = Astro.props;
+const { items, images, images2 } = data;
+---
+
+<div class="dream-list">
+  <div class="dream-list__wrap">
+    {
+      items && (
+        <div class="dream-list__block">
+          {items.map(
+            ({
+              title,
+              list,
+              listType,
+              messages,
+            }: {
+              title?: string;
+              list?: string[];
+              listType?: string;
+              messages?: { emoji: string; text: string }[];
+            }) => (
+              <div class="dream-list__block-item">
+                {title && <h3 class="dream-list__block-title">{title}</h3>}
+                {list && (
+                  <ul class="dream-list__block-list">
+                    {list.map((el: string) => (
+                      <li
+                        class={`dream-list__block-text${
+                          listType ? ` dream-list__block-text--${listType}` : ""
+                        }`}
+                      >
+                        <span>{el}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {messages && (
+                  <div class="dream-list__messages">
+                    {messages.map(
+                      ({ emoji, text }: { emoji: string; text: string }) => (
+                        <div class="dream-list__messages-el">
+                          <span>{emoji}</span>
+                          <span set:html={text} />
+                        </div>
+                      ),
+                    )}
+                  </div>
+                )}
+              </div>
+            ),
+          )}
+        </div>
+      )
+    }
+  </div>
+  {
+    images && (
+      <Images
+        data={{
+          mod: "list",
+          ...images,
+        }}
+      />
+    )
+  }
+  {
+    images2 && (
+      <Images
+        data={{
+          mod: "list-up",
+          ...images2,
+        }}
+      />
+    )
+  }
+  <Clouds client:only="react" />
+  <WaveList client:only="react" />
+</div>

@@ -1,0 +1,10 @@
+---
+import "./styles.scss";
+
+const { descr } = Astro.props;
+---
+
+<p
+  class={`descr${descr.color ? ` descr--${descr.color}` : ""}`}
+  set:html={descr.text}
+/>

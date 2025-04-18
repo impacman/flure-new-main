@@ -1,0 +1,57 @@
+---
+import "./styles.scss";
+import nudes_guide from "../../data/nudes_guide.json";
+
+const { "message-bubble1": messageBubble1, "message-bubble2": messageBubble2 } =
+  nudes_guide;
+---
+
+<div class="message-bubbles">
+  <div class="first-message-bubble">
+    <svg
+      width="392"
+      height="291"
+      viewBox="0 0 392 291"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M214.915 1C364.112 1 391 79.278 391 146.462C391 213.646 271.951 236.284 184.048 235.465C96.1448 234.645 8.82687 178.563 8.82687 129.785C8.82687 53.7593 74.1883 1 214.915 1Z"
+        fill="white"
+        stroke="white"
+        stroke-width="2"></path>
+      <path
+        d="M117.279 208.711C96.4969 230.154 39.9979 290.999 38.9988 281.499C37.9997 272 74.2749 188.478 74.2749 188.478L117.279 208.711Z"
+        fill="white"></path>
+      <path
+        d="M122.804 203.397C102.327 224.524 62.8813 264.328 43.3788 281.176C40.4965 283.666 37.1617 280.982 38.5972 277.435L78.6288 178.518"
+        stroke="black"
+        stroke-width="2"></path>
+    </svg>
+    <span>{messageBubble1}</span>
+  </div>
+
+  <div class="second-message-bubble">
+    <svg
+      width="515"
+      height="271"
+      viewBox="0 0 515 271"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M237.362 1C37.0919 1 1.00023 76.0467 1 140.457C0.999766 204.868 160.802 226.571 278.796 225.786C396.791 225 513.999 171.234 513.999 124.469C513.999 51.5813 426.263 1 237.362 1Z"
+        fill="white"
+        stroke="white"
+        stroke-width="2"></path>
+      <path
+        d="M376.997 208.969C394.278 225.403 440.713 269.476 442.989 266.132C445.266 262.787 412.755 193.462 412.755 193.462L376.997 208.969Z"
+        fill="white"></path>
+      <path
+        d="M372.406 204.895C388.806 220.492 419.838 249.368 436.591 263.012C439.559 265.429 442.986 262.919 441.492 259.518L409.138 185.827"
+        stroke="black"
+        stroke-width="2"></path>
+    </svg>
+    <span>{messageBubble2}</span>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /app/$
+Disallow: /app/*
+Disallow: /cdn-cgi/ 
+Sitemap: https://www.flure.com/sitemap.xml 

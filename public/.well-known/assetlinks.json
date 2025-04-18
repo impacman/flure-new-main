@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.flure.app",
+      "sha256_cert_fingerprints": [
+        "AC:B4:B0:1D:49:B1:AE:F6:39:7B:87:C9:C1:D4:E7:F5:8A:41:05:70:2D:7A:37:06:E6:80:79:1B:13:70:F6:72",
+        "23:1f:32:3a:c7:33:8e:c1:3c:57:cf:37:fb:06:72:b0:f2:db:6e:2b:a0:44:ac:84:c7:34:91:d5:17:cc:89:c4",
+        "4D:B4:AA:8B:45:35:48:D0:B6:18:F9:F3:CB:CF:2D:8A:68:57:DE:73:65:E6:5E:89:58:AF:E7:DE:B6:67:9C:9F"
+      ]
+    }
+  }
+]

@@ -1,0 +1,47 @@
+.dream-arrow-1 {
+  position: absolute;
+  z-index: 2;
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    top: d(173);
+    left: d(56.15);
+    width: d(215.54);
+    height: d(428.17);
+    transform: rotate(108.011deg);
+  }
+
+  @include mob {
+    top: m(37.9);
+    right: m(86.06);
+    width: m(35);
+    height: m(91);
+  }
+}
+
+.dream-arrow-2 {
+  position: absolute;
+  z-index: 2;
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mob {
+    right: m(43);
+    bottom: m(10);
+    width: m(46);
+    height: m(89);
+  }
+}

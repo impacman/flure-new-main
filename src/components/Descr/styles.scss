@@ -1,0 +1,33 @@
+.descr {
+  font-family: var(--font-poppins);
+  color: var(--black);
+  font-weight: 200;
+  line-height: 150%;
+  z-index: 8;
+
+  & b {
+    font-weight: 400;
+  }
+
+  @include des {
+    font-size: d(25);
+    margin-top: d(18);
+
+    & br.mobile {
+      display: none;
+    }
+  }
+
+  @include mob {
+    font-size: m(18);
+    margin-top: m(16);
+
+    & br.desktop {
+      display: none;
+    }
+  }
+
+  &--white {
+    color: var(--white);
+  }
+}

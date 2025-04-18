@@ -1,0 +1,102 @@
+.wrap {
+  position: relative;
+  width: 100vw;
+
+  @include des {
+    padding: d(250) d(102) d(72) d(134);
+  }
+
+  @include mob {
+    padding: m(106) m(25) m(18);
+  }
+
+  & .title {
+    @include des {
+      margin-bottom: d(147);
+    }
+
+    @include mob {
+      font-size: m(46);
+      margin-bottom: m(40);
+    }
+  }
+
+  & h2 {
+    color: var(--black);
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include des {
+      font-size: d(50);
+      margin-bottom: d(43);
+    }
+
+    @include mob {
+      font-size: m(25);
+      margin-bottom: m(16);
+    }
+
+    &:has(span) {
+      text-align: center;
+    }
+  }
+
+  & p {
+    color: var(--black);
+    font-weight: 200;
+    font-family: var(--font-poppins);
+    line-height: 1.5;
+
+    @include des {
+      font-size: d(25);
+      margin-bottom: d(52);
+    }
+
+    @include mob {
+      font-size: m(12);
+      margin-bottom: m(37);
+    }
+
+    &.rightSmall {
+      text-align: right;
+
+      @include des {
+        font-size: d(21);
+      }
+
+      @include mob {
+        font-size: m(10);
+      }
+    }
+  }
+
+  & ol,
+  & ul {
+    color: var(--black);
+    font-weight: 200;
+    font-family: var(--font-poppins);
+    line-height: 1.5;
+
+    @include des {
+      font-size: d(25);
+      margin-bottom: d(52);
+    }
+
+    @include mob {
+      font-size: m(12);
+      margin-bottom: m(37);
+    }
+
+    & li {
+      &::before {
+        content: "- ";
+      }
+    }
+  }
+
+  & a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+}

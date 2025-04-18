@@ -1,0 +1,21 @@
+---
+import "./styles.scss";
+
+import team from "../../data/team.json";
+
+const { title, descr, teams } = team;
+
+import Title from "../Title";
+import Descr from "../Descr";
+import Slider from "../Slider";
+import Wave from "./Wave";
+---
+
+<section class="team">
+  <div class="team__wrap">
+    <Title title={title} />
+    <Descr descr={descr} />
+    {teams && <Slider id={"teams"} items={teams} />}
+  </div>
+  <Wave client:only="react" />
+</section>

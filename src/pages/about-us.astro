@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import About from "../components/About";
+import Mission from "../components/Mission";
+import Values from "../components/Values";
+import Team from "../components/Team";
+import DragMe from "../components/DragMe";
+
+import ROUTES from "../routes";
+const rout = ROUTES["about"];
+
+const metadata = {
+  title: "About Us | Flure",
+  descr:
+    "Learn more about Flure - a sex positive dating app. Feel safe while exploring your options.",
+};
+---
+
+<Layout metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme} s>
+  <About />
+  <Mission />
+  <Values />
+  <Team />
+  <DragMe />
+</Layout>

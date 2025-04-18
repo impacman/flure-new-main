@@ -1,0 +1,941 @@
+.nudes-guide {
+  position: relative;
+  width: 100vw;
+
+  background-color: var(--pink);
+  overflow: hidden;
+
+  @include des {
+    min-height: d(12820);
+  }
+
+  @include mob {
+    min-height: m(8430);
+
+    & .descr {
+      max-width: m(350);
+      font-size: m(12.5);
+      font-weight: 300;
+    }
+  }
+
+  & .title {
+    &--h1 {
+      line-height: 98.5%;
+    
+      @include des {
+        font-size: d(130);
+      }
+    
+      @include mob {
+        font-size: m(38);
+      }
+    }
+    
+    &--h2 {
+      line-height: 98.5%;
+    
+      @include des {
+        font-size: d(80);
+      }
+    
+      @include mob {
+        font-size: m(40);
+        
+        &.small-title {
+          font-size: m(30);
+        }
+      }
+    }
+    
+    &--h3 {
+      line-height: 100%;
+
+      @include des {
+        font-size: d(50);
+      }
+  
+      @include mob {
+        font-size: m(35);
+
+        &.small-title {
+          font-size: m(24);
+        }
+      }
+    }
+  }
+
+  .anchors-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include des {
+      margin-bottom: d(50);
+    }
+
+    @include mob {
+      margin-bottom: m(40);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 200;
+      text-transform: uppercase;
+      border-style: solid;
+      color: var(--white);
+      border-color: var(--white);
+      font-family: var(--font-poppins);
+
+      transition-property: color, border-color, background-color;
+      transition-duration: 0.1s;
+      transition-timing-function: ease;
+      transition-delay: 0s;
+
+      @media (hover: hover) {
+        transition-duration: 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--black);
+          border-color: var(--black);
+          background-color: var(--pink);
+        }
+      }
+
+      @include des {
+        font-size: d(25);
+        padding: d(4) d(40);
+        border-radius: d(110);
+        border-width: d(1.2);
+        height: d(60);
+        margin-right: d(15);
+        margin-bottom: d(15);
+      }
+
+      @include mob {
+        font-size: m(14);
+        line-height: m(18);
+        padding: m(10) m(23);
+        margin-right: m(10);
+        margin-bottom: m(10);
+        border-radius: m(55);
+        border-width: m(0.8);
+        // height: m(40);
+      }
+    }
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 20;
+
+    @include des {
+      padding: d(127) d(135) d(439);
+    }
+
+    @include mob {
+      padding: m(65) m(20) 0;
+    }
+  }
+
+  & .nudes-wave {
+    position: absolute;
+    z-index: 1;
+
+    @include des {
+      top: d(600);
+    }
+
+    @include mob {
+      top: m(250);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+
+    @include des {
+      margin-top: d(100);
+      padding-top: d(200);
+
+      & .max-w-auto {
+        & .descr {
+          max-width: none;
+        }
+      }
+    }
+
+    @include mob {
+      background-color: var(--black);
+      margin-top: m(180);
+    }
+
+    & .nudes-guide__info {
+      @include des {
+        padding-left: d(145);
+        padding-right: d(128);
+
+        & .descr {
+          max-width: 76%;
+        }
+      }
+
+      @include mob {
+        padding-left: m(30);
+
+        & .descr {
+          max-width: m(280);
+        }
+      }
+    }
+  }
+}
+
+.nudes-guide__section-one {
+  background-color: #d9bbf9;
+  position: relative;
+
+  @include des {
+    padding-bottom: d(100);
+  }
+
+  @include mob {
+    padding-bottom: m(35);
+  }
+
+  & .bookmark-first {
+    position: absolute;
+    z-index: 1;
+
+    @include des {
+      right: d(135);
+      top: d(-260);
+    }
+
+    @include mob {
+      right: m(60);
+      top: m(-75);
+    }
+  }
+
+  & .white-pink-pastel {
+    z-index: 2;
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+      top: m(-10);
+    }
+  }
+
+  & .white-pastel {
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+    }
+  }
+
+  & .quote {
+    position: absolute;
+    z-index: 3;
+
+    @include des {
+      margin-top: d(10);
+      margin-bottom: d(150);
+    }
+
+    @include mob {
+      margin-top: m(5);
+      margin-bottom: m(120);
+    }
+
+    &__mb {
+      @include des {
+        margin-bottom: d(200);
+      }
+
+      @include mob {
+        margin-bottom: m(35);
+      }
+    }
+  }
+}
+
+.nudes-guide__section-two {
+  background-color: var(--pink);
+  position: relative;
+
+  @include des {
+    padding-bottom: d(150);
+  }
+
+  @include mob {
+    padding-bottom: m(45);
+  }
+
+  & .black-pastel {
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+      top: m(-10);
+    }
+  }
+
+  & .quote {
+    position: absolute;
+
+    @include des {
+      top: 0;
+      margin-top: d(10);
+    }
+
+    @include mob {
+      top: m(35);
+    }
+  }
+}
+
+.nudes-guide__section-three {
+  background-color: black;
+  position: relative;
+
+  @include des {
+    padding-bottom: d(150);
+  }
+
+  @include mob {
+    padding-bottom: m(40);
+  }
+
+  & .white-pink-pastel {
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+      transform: scale(0.8);
+      top: m(-90);
+    }
+  }
+
+  & .quote {
+    position: absolute;
+
+    & .descr {
+      max-width: 90% !important;
+    }
+
+    @include des {
+      top: d(30);
+      margin-top: d(10);
+      margin-bottom: d(150);
+    }
+
+    @include mob {
+      top: m(30);
+      margin-bottom: m(90);
+    }
+  }
+
+  .nudes-guide__info-with-photo-right {
+    @include des {
+      margin-top: d(-120);
+    }
+
+    @include mob {
+      margin-top: m(-130);
+    }
+  }
+}
+
+.nudes-guide__section-four {
+  background-color: #d9bbf9;
+  position: relative;
+
+  @include des {
+    padding-bottom: d(150);
+  }
+  @include mob {
+    padding-bottom: m(25);
+  }
+
+  & .white-pastel {
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+      top: m(-10);
+    }
+  }
+
+  & .quote {
+    position: absolute;
+
+    & .descr {
+      max-width: 90% !important;
+    }
+
+    @include des {
+      top: d(20);
+      margin-top: d(10);
+      margin-bottom: d(150);
+    }
+
+    @include mob {
+      top: m(30);
+    }
+  }
+
+  .nudes-guide__info-with-photo-right {
+    @include des {
+      margin-top: d(-120);
+    }
+  }
+
+  .nudes-guide__how-to-ask-and-send-title {
+    @include des {
+      max-width: d(1450);
+    }
+  }
+
+  .nudes-guide__how-to-ask {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    @include des {
+      margin-top: d(12);
+      padding-left: d(145);
+      padding-right: d(24);
+    }
+
+    @include mob {
+      flex-direction: column-reverse;
+    }
+
+    &__descr {
+      @include des {
+        margin-top: d(96);
+        max-width: d(830);
+      }
+
+      @include mob {
+        margin-left: m(30);
+        max-width: m(280);
+      }
+
+      .descr {
+        margin-top: 0;
+      }
+    }
+
+    &__collage {
+      display: flex;
+      justify-content: center;
+
+      @include des {
+        height: d(960);
+        width: d(812);
+      }
+
+      @include mob {
+        margin-top: m(20);
+      }
+      img {
+        @include des {
+          width: 100%;
+        }
+
+        @include mob {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .nudes-guide__how-to-ask-2 {
+    display: flex;
+    justify-content: space-between;
+
+    @include des {
+      margin-top: d(45);
+      padding-right: d(143);
+    }
+
+    @include mob {
+      flex-direction: column;
+    }
+
+    &__descr {
+      @include des {
+        max-width: d(780);
+        margin-top: d(170);
+      }
+
+      @include mob {
+        max-width: m(280);
+        margin-left: m(30);
+      }
+
+      .descr {
+        margin-top: 0;
+      }
+    }
+
+    &__collage {
+      position: relative;
+
+      @include des {
+        height: d(980);
+        width: d(900);
+      }
+
+      @include mob {
+        height: m(330);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        position: absolute;
+
+        @include des {
+          width: 100%;
+          left: d(-90);
+        }
+
+        @include mob {
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .nudes-guide__how-to-ask__invite__wrapper {
+    position: relative;
+  }
+
+  .nudes-guide__how-to-ask__invite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    @include des {
+      top: d(70);
+    }
+
+    @include mob {
+      top: m(45);
+    }
+
+    .plain,
+    .heart {
+      position: absolute;
+    }
+
+    .plain {
+      @include des {
+        width: d(210);
+        top: d(-110);
+        left: d(250);
+      }
+
+      @include mob {
+        width: m(95);
+        top: m(-55);
+        left: m(5);
+      }
+    }
+
+    .heart {
+      @include des {
+        width: d(148);
+        bottom: d(-120);
+        right: d(250);
+      }
+
+      @include mob {
+        width: m(65);
+        bottom: m(-65);
+        right: m(15);
+      }
+    }
+  }
+}
+
+.nudes-guide__section-five {
+  position: relative;
+  background-color: var(--pink);
+
+  @include des {
+    padding-bottom: d(400);
+  }
+
+  @include mob {
+    padding-bottom: m(300);
+  }
+
+  & .white-pastel {
+    @include des {
+      top: d(-105);
+    }
+
+    @include mob {
+      top: m(-10);
+    }
+  }
+
+  & .quote {
+    position: absolute;
+    top: 0;
+
+    @include mob {
+      top: m(10);
+    }
+
+    & .descr {
+      @include des {
+        max-width: 80% !important;
+      }
+
+      @include mob {
+        max-width: m(320);
+      }
+    }
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+
+    @include des {
+      max-width: d(1175);
+      font-size: d(90);
+      margin-top: d(-30);
+    }
+
+    @include mob {
+      font-size: m(38);
+      margin-top: m(30);
+    }
+  }
+
+  & .nudes-guide__info {
+    & .descr {
+      @include des {
+        max-width: d(1056);
+      }
+    }
+  }
+}
+
+.nudes-guide__section-six {
+  position: relative;
+  background-color: var(--white);
+
+  @include des {
+    padding-bottom: d(20);
+  }
+
+  @include mob {
+    padding-bottom: m(70);
+  }
+
+  & .black-pastel-big {
+    z-index: 1;
+    @include des {
+      top: d(-130);
+    }
+
+    @include mob {
+      top: m(-30);
+    }
+  }
+
+  & .bookmark-second {
+    position: absolute;
+    @include des {
+      left: d(300);
+      top: d(-330);
+    }
+
+    @include mob {
+      display: none;
+    }
+  }
+
+  & .nudes-woman-with-knife {
+    position: absolute;
+    @include des {
+      right: d(-10);
+      top: d(-710);
+    }
+
+    @include mob {
+      right: m(-10);
+      top: m(-240);
+    }
+  }
+
+  &__immediate-steps-descr {
+    @include des {
+      margin-top: d(90);
+    }
+  }
+
+  &__why-wait {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    text-align: left;
+
+    @include des {
+      font-size: d(30);
+    }
+
+    @include mob {
+      font-size: m(12.5);
+      line-height: m(19);
+      font-weight: 500;
+      max-width: m(290);
+    }
+  }
+
+  .nudes-guide__info {
+    width: 100%;
+
+    img {
+      @include des {
+        width: d(653);
+      }
+
+      @include mob {
+        width: m(300);
+      }
+    }
+  }
+
+  & .quote {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    @include des {
+      padding-right: d(170);
+      top: d(-40);
+    }
+
+    @include mob {
+      flex-direction: column;
+      top: m(40);
+    }
+
+    & .descr {
+      margin-top: 0;
+      @include des {
+        max-width: d(760);
+      }
+
+      @include mob {
+      }
+    }
+  }
+
+  & .epilogue {
+    display: flex;
+    flex-direction: column;
+
+    @include des {
+      align-items: center;
+    }
+
+    .mb-50 {
+      @include mob {
+        margin-bottom: m(20);
+      }
+    }
+
+    & .descr {
+      @include des {
+        max-width: d(1671);
+      }
+    }
+
+    .share-nude-btn {
+      @include des {
+        margin-top: d(80);
+        height: d(98);
+      }
+
+      @include mob {
+        margin-top: m(25);
+        height: m(45);
+        padding: 0 m(5);
+        max-width: m(315);
+      }
+    }
+  }
+}
+
+.nudes-guide__info-with-photo-left,
+.nudes-guide__info-with-photo-right {
+  display: flex;
+  align-items: center;
+
+  @include mob {
+    &__text {
+      margin-left: m(30);
+      max-width: m(280);
+      align-self: flex-start;
+    }
+  }
+
+  & img {
+    @include des {
+      height: d(514);
+      width: d(415);
+    }
+
+    @include mob {
+      margin-top: m(30);
+      margin-bottom: m(20);
+      width: m(210);
+    }
+  }
+}
+
+.nudes-guide__info-with-photo-left {
+  @include des {
+    padding-left: d(204);
+    padding-right: d(138);
+  }
+
+  @include mob {
+    flex-direction: column;
+  }
+
+  & img {
+    @include des {
+      margin-right: d(95);
+    }
+
+    @include mob {
+    }
+  }
+}
+
+.nudes-guide__info-with-photo-right {
+  @include des {
+    margin-top: d(30);
+    margin-bottom: d(60);
+    padding-left: d(145);
+    padding-right: d(136);
+  }
+
+  @include mob {
+    flex-direction: column-reverse;
+  }
+
+  & img {
+    @include des {
+      margin-left: d(300);
+    }
+
+    @include mob {
+    }
+  }
+}
+
+.nudes-guide__content {
+  ul {
+    list-style-type: disc;
+    @include des {
+      margin-left: d(30);
+    }
+  
+    @include mob {
+      margin-left: m(20);
+    }
+  
+    li.white {
+      color: var(--white);
+
+      &::marker {
+        color: var(--white);
+      }
+    }
+  }
+}
+
+.mb-30 {
+  @include des {
+    margin-bottom: d(30);
+  }
+
+  @include mob {
+    margin-bottom: m(15);
+  }
+}
+
+.mb-34 {
+  @include des {
+    margin-bottom: d(34);
+  }
+
+  @include mob {
+    margin-bottom: m(18);
+  }
+}
+
+.mb-50 {
+  @include des {
+    margin-bottom: d(50);
+  }
+
+  @include mob {
+    margin-bottom: m(25);
+  }
+}
+
+.mb-70 {
+  @include des {
+    margin-bottom: d(70);
+  }
+
+  @include mob {
+    margin-bottom: m(20);
+  }
+}
+
+.mb-200 {
+  @include des {
+    margin-bottom: d(200);
+  }
+
+  @include mob {
+    margin-bottom: m(80);
+  }
+}
+
+.mb-240 {
+  @include des {
+    margin-bottom: d(240);
+  }
+
+  @include mob {
+    margin-bottom: m(80);
+  }
+}

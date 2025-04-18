@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="/cmp.css" id="cmpStyles" type="text/css" />
+<script>
+  const tryInsertCMPStyles = () => {
+    try {
+      const cmpStyles = document.getElementById("cmpStyles");
+
+      if (cmpStyles) {
+        // @ts-expect-error we handling intentional error to retry
+        document.querySelector("#cmpwrapper").shadowRoot.append(cmpStyles);
+      }
+    } catch (e) {
+      setTimeout(tryInsertCMPStyles, 100);
+    }
+  };
+
+  tryInsertCMPStyles();
+</script>

@@ -1,0 +1,24 @@
+.letter-women {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 19;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    width: d(610);
+    height: d(458);
+    top: d(420);
+    right: d(-90);
+  }
+
+  @include mob {
+    width: m(300);
+    top: m(360);
+    right: d(-170);
+  }
+}

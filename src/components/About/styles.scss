@@ -1,0 +1,48 @@
+.about {
+  position: relative;
+  width: 100vw;
+  background-color: inherit;
+
+  @include des {
+    height: d(1380);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      background-color: var(--black);
+      width: 100%;
+      height: d(100);
+    }
+  }
+
+  @include mob {
+    min-height: m(746);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    @include des {
+      padding: d(255) d(135);
+    }
+
+    @include mob {
+      padding: m(98) m(26) m(23);
+    }
+  }
+
+  &__title {
+    @include des {
+      margin-bottom: d(318);
+    }
+
+    @include mob {
+      margin-bottom: m(632);
+      text-align: center;
+    }
+  }
+}

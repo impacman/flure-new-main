@@ -1,0 +1,179 @@
+---
+import "./styles.scss";
+const { pathname, bodyColor } = Astro.props;
+
+import Logo from "../Logo";
+import SignUpButton from "../SignUpButton";
+import Ltd from "../Ltd";
+import FooterPeople from "../../svg/FooterPeople";
+// import ScrollBtn from "../ScrollBtn";
+---
+
+<footer class={`footer footer--${bodyColor}`}>
+  <div class="footer__wrap">
+    <div class="footer__col">
+      <Logo bodyColor={"black"} client:only="react" />
+      <SignUpButton section={"footer"} client:only="react" />
+      <a
+        data-footer-link
+        href="https://help-center.flure.com/en"
+        class="footer__support">Get Support</a
+      >
+    </div>
+    <div class="footer__nav">
+      <div class="footer__nav-col">
+        <div class="footer__nav-title">Download</div>
+        <div class="footer__nav-links">
+          <a
+            data-footer-link
+            href="https://flure.onelink.me/4Xrl/8uuflpor"
+            class="footer__nav-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="35"
+              viewBox="0 0 28 35"
+              fill="none"
+            >
+              <path
+                d="M23.3863 18.3415C23.4209 15.6546 24.8265 13.1728 27.1107 11.7655C25.6631 9.69376 23.3255 8.42732 20.8029 8.34823C18.149 8.06907 15.5761 9.93965 14.2237 9.93965C12.8451 9.93965 10.7629 8.37594 8.52066 8.42217C5.57048 8.51769 2.88679 10.1578 1.45147 12.7425C-1.60511 18.0457 0.674821 25.8395 3.60277 30.1262C5.06768 32.2252 6.77974 34.5699 9.01994 34.4868C11.2121 34.3957 12.0308 33.086 14.677 33.086C17.2986 33.086 18.0667 34.4868 20.3523 34.4339C22.7046 34.3957 24.1867 32.3255 25.6002 30.2066C26.6528 28.7109 27.4627 27.0579 28 25.3088C25.2062 24.1246 23.3896 21.3813 23.3863 18.3415Z"
+                fill="var(--white)"></path>
+              <path
+                d="M19.0763 5.52836C20.3589 3.98544 20.9908 2.00226 20.8378 0C18.8783 0.20624 17.0683 1.14472 15.7684 2.62845C14.4848 4.09235 13.8345 6.00752 13.9608 7.95215C15.9466 7.97263 17.832 7.0793 19.0763 5.52836Z"
+                fill="var(--white)"></path>
+            </svg>
+            <span>Apple IOS</span></a
+          >
+          <a
+            data-footer-link
+            href="https://flure.onelink.me/4Xrl/wqruqavj"
+            class="footer__nav-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="33"
+              height="36"
+              viewBox="0 0 33 36"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.92371 1.53302C1.5372 1.94522 1.30859 2.58522 1.30859 3.41444V33.0321C1.30859 33.862 1.5372 34.5013 1.92371 34.9135L2.02207 35.0101L18.4886 18.419V18.2233V18.0276L2.02207 1.43579L1.92371 1.53302Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.9807 23.9517L18.4922 18.4189V18.2233V18.0275L23.982 12.4961L24.1058 12.5672L30.6089 16.2903C32.4665 17.3536 32.4665 19.0935 30.6089 20.1575L24.1058 23.8806L23.9807 23.9517Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.1082 23.8798L18.4946 18.2231L1.92969 34.9133C2.54215 35.5665 3.55282 35.6474 4.69175 34.9956L24.1082 23.8798Z"
+                fill="var(--white)"></path>
+              <path
+                d="M24.1082 23.8798L18.4946 18.2231L1.92969 34.9133C2.54215 35.5665 3.55282 35.6474 4.69175 34.9956L24.1082 23.8798"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24.1082 12.566L4.69175 1.45013C3.55282 0.79835 2.54215 0.879237 1.92969 1.53236L18.4946 18.2227L24.1082 12.566Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                opacity="0.2"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M23.973 23.7554L4.68027 34.8001C3.60102 35.4178 2.63621 35.3767 2.01723 34.8144L1.91821 34.9142L2.01657 35.0107L2.01723 35.0101C2.63621 35.5724 3.60102 35.6142 4.68027 34.9957L24.0967 23.8799L23.973 23.7554Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                opacity="0.12"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.92307 34.7181C1.53637 34.3058 1.30765 33.6658 1.30765 32.8367V33.0323C1.30765 33.8616 1.53637 34.5014 1.92307 34.9138L2.02214 34.814L1.92307 34.7181Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                opacity="0.12"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M30.5996 19.9617L23.9727 23.7559L24.0964 23.8804L30.5996 20.1574C31.5281 19.6257 31.9929 18.925 31.9929 18.2244C31.9146 18.8579 31.4419 19.4796 30.5996 19.9617Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+              <path
+                opacity="0.25"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.68577 1.64645L30.6053 16.4847C31.4477 16.9668 31.9204 17.5879 31.9987 18.2227C31.9993 17.522 31.5344 16.8207 30.6053 16.289L4.68577 1.4508C2.82818 0.387345 1.30859 1.27067 1.30859 3.41445V3.61011C1.30859 1.46646 2.82818 0.583135 4.68577 1.64645Z"
+                fill="var(--white)"
+                stroke="var(--black)"
+                stroke-width="0.812542"></path>
+            </svg>
+            <span>Google Play</span></a
+          >
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <div class="footer__nav-title">About Flure</div>
+        <div class="footer__nav-links">
+          <a data-footer-link href="/about-us" class="footer__nav-link"
+            >About Us</a
+          >
+          <!-- <a data-footer-link href="#" class="footer__nav-link"
+            >What is an<br />Explorationship?</a
+          > -->
+          <a data-footer-link href="/contact-us" class="footer__nav-link"
+            >Contact Us</a
+          >
+          <a data-footer-link href="/blog" class="footer__nav-link">Our Blog</a>
+          <a data-footer-link href="/faq" class="footer__nav-link">FAQ</a>
+        </div>
+      </div>
+      <div class="footer__nav-col">
+        <div class="footer__nav-title">Legal</div>
+        <div class="footer__nav-links">
+          <a
+            data-footer-link
+            href="/app/termsConditions"
+            class="footer__nav-link">Terms And Conditions</a
+          >
+          <a data-footer-link href="/privacy" class="footer__nav-link"
+            >Privacy Policy</a
+          >
+          <a
+            data-footer-link
+            href="/community-guidelines"
+            class="footer__nav-link">Community Guidelines</a
+          >
+          <!-- <a data-footer-link href="#" class="footer__nav-link"
+            >Cookies Policy</a
+          >
+          <a data-footer-link href="#" class="footer__nav-link"
+            >Cookies Settings</a
+          > -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <Ltd dark={bodyColor === "white"} />
+  <FooterPeople client:only="react" />
+  <!-- <ScrollBtn client:only="react" pathname={pathname} position={"bottom"} /> -->
+</footer>
+
+<script>
+  import { useChangePage } from "../../hooks/useChangePage";
+
+  const els = document.querySelectorAll("[data-footer-link]");
+  els.forEach((el) => el.addEventListener("click", useChangePage));
+</script>

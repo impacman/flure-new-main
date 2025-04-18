@@ -1,0 +1,42 @@
+---
+import "./styles.scss";
+import spotted from "../../data/spotted.json";
+
+const { title, items } = spotted;
+const newArray = [...items, ...items];
+---
+
+<section class="spotted">
+  {title && <h2 class="spotted__title">{title}</h2>}
+  {
+    items && (
+      <div class="spotted__ticker">
+        <div class="spotted__ticker-wrapper" data-ticker>
+          {newArray.map(({ img, link }) => (
+            <div class="spotted__ticker-item">
+              {link && <a href={link} class="spotted__ticker-link" />}
+              <div class="spotted__ticker-img">
+                <img src={img.src} alt="" />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</section>
+
+<script>
+  const speed = 50;
+  const tickers: NodeListOf<HTMLDivElement> =
+    document.querySelectorAll("[data-ticker]");
+
+  tickers.forEach((ticker) => {
+    const duration = ticker.scrollWidth / 2 / speed;
+
+    ticker.style.animationName = "tickerScroll";
+    ticker.style.animationTimingFunction = "linear";
+    ticker.style.animationIterationCount = "infinite";
+    ticker.style.animationDuration = `${duration}s`;
+  });
+</script>

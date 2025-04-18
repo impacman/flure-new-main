@@ -1,0 +1,49 @@
+.page-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pink);
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.7s ease 0s;
+  pointer-events: none;
+
+  &--pink {
+    background-color: var(--pink);
+  }
+
+  &--mauve {
+    background-color: var(--mauve);
+  }
+
+  &--black {
+    background-color: var(--black);
+
+    & path {
+      fill: var(--pink);
+    }
+  }
+
+  &.show {
+    opacity: 10;
+  }
+
+  & .logo-preloader {
+    transition: opacity 0.3s ease 0s;
+
+    @include des {
+      width: d(150);
+      height: d(150);
+    }
+
+    @include mob {
+      width: m(100);
+      height: m(100);
+    }
+  }
+}

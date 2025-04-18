@@ -1,0 +1,107 @@
+.spotted {
+  position: relative;
+  width: 100%;
+  background-color: inherit;
+  overflow: hidden;
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include des {
+    padding: 0 0 d(18);
+  }
+
+  @include mob {
+    padding: 0 0 m(26);
+  }
+
+  &__title {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    line-height: normal;
+
+    @include des {
+      font-size: d(20);
+      margin-bottom: d(10);
+    }
+
+    @include mob {
+      font-size: m(16);
+      margin-bottom: m(13);
+    }
+  }
+
+  &__ticker {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    &-wrapper {
+      display: flex;
+      width: max-content;
+
+      @include des {
+        grid-gap: d(78);
+      }
+
+      @include mob {
+        grid-gap: m(17);
+      }
+    }
+
+    &-item {
+      position: relative;
+      flex: none;
+
+      @media (hover: hover) {
+        &:hover img {
+          transform: rotate(-5deg);
+        }
+      }
+
+      &:active img {
+        transform: rotate(5deg);
+      }
+    }
+
+    &-link {
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-img {
+      position: relative;
+      z-index: 1;
+      width: auto;
+
+      @include des {
+        height: d(84);
+      }
+
+      @include mob {
+        height: m(52);
+      }
+
+      & img {
+        display: block;
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@keyframes tickerScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

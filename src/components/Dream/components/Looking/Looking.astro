@@ -1,0 +1,69 @@
+---
+import "./styles.scss";
+
+import { Arrow1, Arrow2 } from "../../../../svg/Dream/Arrows";
+import Descr from "../Descr";
+import Images from "../Images";
+
+const { data } = Astro.props;
+const { chief, descrs, images } = data;
+---
+
+<div class="dream-looking">
+  <div class="dream-looking__wrap">
+    {
+      chief && (
+        <div class="dream-looking__chief chief">
+          <p class="chief__title" set:html={chief.title} />
+          <Arrow1 client:only="react" />
+          <div class="chief__card">
+            {chief.card.texts.map((el: string) => (
+              <p class="chief__card-text" set:html={el} />
+            ))}
+            <div class="chief__card-bg">
+              <svg
+                width="444"
+                height="554"
+                viewBox="0 0 444 554"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_69_652)">
+                  <path
+                    d="M303.895 95.5357C242.808 55.1806 214.956 79.9749 199.316 101.681C190.103 114.468 171.948 141.885 167.532 152.891C162.012 166.648 147.797 190.684 124.797 210.862C101.797 231.039 107.317 284.235 107.317 292.489C107.317 300.743 99.9574 312.667 81.5576 327.341C63.1577 342.016 76.9576 363.11 62.2377 379.619C55.2821 387.42 44 389.5 34.0216 385.898C25 382 12.5 371.5 0 367.5L0 554.026H306.876C304.176 542.362 294.251 516.766 289.299 512.054C329.249 515.234 333.174 481.246 349.275 475.004C365.835 468.584 400.795 470.418 416.435 447.489C432.075 424.56 430.235 376.868 421.035 343.85C411.835 310.832 386.995 309.915 376.875 292.489C366.755 275.063 381.475 274.146 370.435 243.88C359.395 213.613 317.076 226.453 312.476 198.021C307.876 169.589 335.679 130.358 303.895 95.5357Z"
+                    fill="#E2CBFA"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_69_652">
+                    <rect width="444" height="554" fill="#E2CBFA" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      )
+    }
+    {
+      descrs && (
+        <div class="dream-looking__descrs">
+          {descrs.map(({ text }: { text: string }) => (
+            <Descr text={text} />
+          ))}
+        </div>
+      )
+    }
+  </div>
+  {
+    images && (
+      <Images
+        data={{
+          mod: "looking",
+          ...images,
+        }}
+      />
+    )
+  }
+  <Arrow2 client:only="react" />
+</div>

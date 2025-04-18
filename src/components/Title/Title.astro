@@ -1,0 +1,12 @@
+---
+import "./styles.scss";
+
+const { title, className } = Astro.props;
+
+const Tag = title.type ? title.type : "p";
+const ClassName = `title ${className || ""} title--${Tag}${
+  title.position ? ` title--${title.position}` : ""
+}${title.color ? ` title--${title.color}` : ""}`;
+---
+
+<Tag class={ClassName} set:html={title.text} />

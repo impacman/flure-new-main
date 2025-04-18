@@ -1,0 +1,79 @@
+.dream-wave {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 9;
+
+  @include des {
+    bottom: d(-1);
+  }
+
+  @include mob {
+    bottom: m(-1);
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+
+    @include des {
+      height: d(6);
+      bottom: d(-3);
+    }
+
+    @include mob {
+      height: m(4);
+      bottom: m(-2);
+    }
+  }
+
+  &--video {
+    @include des {
+      height: d(62);
+    }
+
+    @include mob {
+      height: m(17);
+    }
+
+    &::after {
+      background-color: var(--pink);
+    }
+  }
+
+  &--promo {
+    @include des {
+      height: d(88);
+    }
+
+    &::after {
+      background-color: var(--mauve);
+    }
+  }
+
+  &--list {
+    @include des {
+      height: d(127);
+    }
+
+    @include mob {
+      height: m(65);
+      z-index: 15;
+    }
+
+    &::after {
+      background-color: var(--pink);
+    }
+  }
+}

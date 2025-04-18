@@ -1,0 +1,33 @@
+.btn {
+  border-style: solid;
+  overflow: hidden;
+  transition-property: border-color;
+  @include easy();
+
+  [data-header-style="/about-us"] &,
+  [data-header-style="/contact-us"] &,
+  [data-header-style="/privacy"] &,
+  [data-header-style="/community-guidelines"] &,
+  [data-header-style="/terms-condition"] &,
+  [data-header-style="nav"] & {
+    border-color: var(--black);
+  }
+
+  [data-header-style="/faq"] & {
+    border-color: var(--white);
+  }
+
+  @include des {
+    min-width: d(86);
+    height: d(64);
+    border-width: d(1.2);
+    border-radius: d(65.816);
+  }
+
+  @include mob {
+    min-width: m(46);
+    height: m(34);
+    border-width: m(1);
+    border-radius: m(40);
+  }
+}

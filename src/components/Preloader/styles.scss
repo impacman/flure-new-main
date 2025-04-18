@@ -1,0 +1,55 @@
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--pink);
+  z-index: 999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s ease 0s;
+  // transform-origin: top center;
+  opacity: 1;
+
+  &--pink {
+    background-color: var(--pink);
+  }
+
+  &--mauve {
+    background-color: var(--mauve);
+  }
+
+  &--black,
+  &--pink-black-light {
+    background-color: var(--black);
+
+    & path {
+      fill: var(--pink);
+    }
+  }
+
+  &.hide {
+    // transform: scaleY(0) translateY(-50%);
+    opacity: 0;
+
+    & .logo-preloader {
+      opacity: 0;
+    }
+  }
+
+  & .logo-preloader {
+    transition: opacity 0.3s ease 0s;
+
+    @include des {
+      width: d(150);
+      height: d(150);
+    }
+
+    @include mob {
+      width: m(100);
+      height: m(100);
+    }
+  }
+}

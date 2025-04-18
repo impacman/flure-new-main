@@ -1,0 +1,21 @@
+.dream-descr {
+  font-family: var(--font-poppins);
+  line-height: 146.678%;
+  font-weight: 300;
+
+  & b {
+    font-weight: 600;
+  }
+
+  @include des {
+    font-size: d(39);
+  }
+
+  @include mob {
+    font-size: m(18);
+
+    &:not(:first-of-type) b {
+      font-weight: inherit;
+    }
+  }
+}

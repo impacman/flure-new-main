@@ -1,0 +1,23 @@
+---
+import "./styles.scss";
+import dream from "../../data/dream.json";
+
+import Video from "./components/Video";
+import CinematicRomance from "./components/CinematicRomance";
+import Looking from "./components/Looking/Looking.astro";
+import TextPromo from "./components/TextPromo";
+import MoodBoard from "./components/MoodBoard/MoodBoard.astro";
+import List from "./components/List";
+
+const { video, cinematicRomance, looking, paid, list, vibe, moodBoard } = dream;
+---
+
+<section class="dream">
+  {video && <Video data={video} />}
+  {cinematicRomance && <CinematicRomance data={cinematicRomance} />}
+  {looking && <Looking data={looking} />}
+  {paid && <TextPromo data={paid} />}
+  {list && <List data={list} />}
+  {vibe && <TextPromo data={vibe} />}
+  {moodBoard && <MoodBoard data={moodBoard} />}
+</section>

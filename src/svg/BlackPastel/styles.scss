@@ -1,0 +1,31 @@
+.black-pastel__wrapper {
+  position: relative;
+  background-color: transparent;
+
+  @include des {
+    height: d(467);
+  }
+  @include mob {
+    height: m(275);
+  }
+
+  & .black-pastel {
+    position: absolute;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include des {
+      left: d(-50);
+      width: d(2034);
+      height: d(467);
+    }
+
+    @include mob {
+      left: m(-450);
+      width: m(1300);
+    }
+  }
+}

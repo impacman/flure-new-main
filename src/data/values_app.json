@@ -1,0 +1,72 @@
+{
+  "items": [
+    {
+      "title": ["No", "Pressure"],
+      "descr": [
+        "You don’t have to define anything",
+        "before you’ve even met.",
+        "Just talk. Let it unfold."
+      ],
+      "video": "/video/1.mp4",
+      "top": {
+        "SvgOverYou": true
+      },
+      "bottom": {
+        "tags": [
+          "Street Art",
+          "AI Curious",
+          "IRL Flirt",
+          "Selective Extrovert",
+          "Midnight Philosopher",
+          "Yoga Fan",
+          "Spicy Lover",
+          "Feelings Talker"
+        ]
+      }
+    },
+    {
+      "title": ["No", "Labels"],
+      "descr": [
+        "Let it be nothing. Let it be everything.",
+        "You connect, you meet — and then",
+        "you figure it out. (Or not. That’s",
+        "kinda the point.)"
+      ],
+      "video": "/video/2.mp4",
+      "top": {
+        "card": {
+          "message": {
+            "avatar": "/images/values/a2.jpg",
+            "text": "How about a game?"
+          },
+          "text": "What is your wildest fantasy?"
+        }
+      },
+      "bottom": {
+        "message": {
+          "avatar": "/images/values/a1.jpg",
+          "text": "Oh, you're straightforward,<br> I like that. Where do I start..."
+        }
+      }
+    },
+    {
+      "title": ["Just", "Vibe"],
+      "descr": [
+        "The fun part comes first.",
+        "Just enjoying the spark.",
+        "What it becomes is up to both of you."
+      ],
+      "video": "/video/3.mp4",
+      "top": {
+        "SvgEggplant": true,
+        "timer": {
+          "text": "You sent a one-view photo. Sasha can view it only once for 4 seconds.",
+          "img": "/images/values/timer-bg.jpg"
+        }
+      },
+      "bottom": {
+        "SvgStay": true
+      }
+    }
+  ]
+}

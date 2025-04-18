@@ -1,0 +1,213 @@
+{
+  "video": {
+    "title": {
+      "type": "h1",
+      "text": "Lights, Camera, Flirt!",
+      "color": "white"
+    },
+    "descr": "Ready to live your<br class='mobile'> <b>main-character</b> moment?",
+    "images": {
+      "items": [
+        {
+          "svg": "TurboAirplane"
+        },
+        {
+          "svg": "FireHeart"
+        }
+      ]
+    }
+  },
+  "cinematicRomance": {
+    "title": {
+      "type": "h2",
+      "text": "Forget swiping<br class='mobile'> aimlessly—<br class='mobile'> what if your<br class='desktop'> <b>dating life</b><br class='mobile'> looked more<br> like the <b>big<br class='mobile'> screen</b><b>?</b>"
+    },
+    "images": {
+      "items": [
+        {
+          "svg": "HeartWithWings"
+        },
+        {
+          "svg": "Corona"
+        }
+      ]
+    }
+  },
+  "looking": {
+    "chief": {
+      "title": "Flure&nbsp;is looking&nbsp;for",
+      "card": {
+        "texts": ["VP of<br> Going Out", "?"]
+      }
+    },
+    "descrs": [
+      {
+        "text": "Someone bold enough to step into the spotlight and <b>recreate</b> the most iconic <b>romantic</b> movie <b>moments.</b>"
+      },
+      {
+        "text": "This isn’t just about vibes; it’s your chance to find out&nbsp;if&nbsp;<b>Hollywood’s romance</b> is as real as it looks."
+      },
+      {
+        "text": "Oh, and did we mention?"
+      }
+    ],
+    "images": {
+      "items": [
+        {
+          "src": "bridgerton-by-netflix"
+        },
+        {
+          "src": "friends-love-by-euphoria"
+        },
+        {
+          "src": "download"
+        },
+        {
+          "src": "i-love-you-noah-by-netflix"
+        },
+        {
+          "svg": "MoneyWithWings"
+        }
+      ]
+    }
+  },
+  "paid": {
+    "title": {
+      "type": "h2",
+      "text": "You’ll <b>be paid</b><br class='mobile'> to<br class='desktop'> figure it out."
+    },
+    "images": {
+      "items": [
+        {
+          "svg": "MoneyWithWings"
+        }
+      ]
+    },
+    "btn": {
+      "text": "Apply for the Role",
+      "link": "https://flureapp.typeform.com/dreamjob?typeform-source=knowledge.sdventures.com"
+    },
+    "wave": true
+  },
+  "list": {
+    "items": [
+      {
+        "title": "What’s the role?",
+        "list": [
+          "Here’s your job description:",
+          "🎬 Recreate 30 legendary movie-inspired dates in 3 months.",
+          "💬 Rate the vibes: How real was the chemistry? Was the setting swoon-worthy?",
+          "📸 Document the magic: Share the highs (and awkward moments) through photo, video, and cheeky write-ups.",
+          "💰 Stick to a budget while still living your cinematic dreams."
+        ]
+      },
+      {
+        "title": "What kind of scenes?",
+        "list": [
+          "We’re talking about recreating Gen Z’s favorite cinematic moments. Imagine this:",
+          "🍵 A cozy boba-making date like in To All the Boys: Always and Forever.",
+          "💿 Record store flirting inspired by High Fidelity.",
+          "🍔 Sharing late-night burgers and existential talks like in Euphoria.",
+          "🎮 Couch co-op gaming à la Scott Pilgrim vs. the World.",
+          "Rom-coms, tearjerkers, or TikTok-famous moments—we’ve got you covered. ",
+          "Your job is to bring them to life."
+        ]
+      },
+      {
+        "title": "Are you the one?",
+        "list": [
+          "Here’s who we’re looking for:",
+          "A current university or college student.",
+          "Someone ready to dedicate 3 months to the ultimate dating adventure.",
+          "A lover of movies, romance, and storytelling (the more dramatic, the better).",
+          "Bonus: You’ve got the content creation skills to make the world feel like they’re on the date with you."
+        ],
+        "listType": "disk"
+      },
+      {
+        "title": "What’s in it for you?",
+        "messages": [
+          {
+            "emoji": "💃",
+            "text": "Main-character energy: Turn<br> your favorite movie scenes into<br> real-life moments."
+          },
+          {
+            "emoji": "🍹",
+            "text": "Date budgets included:<br class='desktop'> We’ve<br class='mobile'> got you covered for<br class='desktop'> everything<br class='mobile'> from ice cream<br class='desktop'> to rooftop<br class='mobile'> cocktails."
+          },
+          {
+            "emoji": "🤑",
+            "text": "A-list salary: Not just fun<br class='desktop'>—it<br class='mobile'> pays well, too."
+          }
+        ]
+      }
+    ],
+    "images": {
+      "items": [
+        {
+          "src": "in-love-kiss"
+        },
+        {
+          "svg": "HeartWithWings"
+        },
+        {
+          "src": "danny-zuko"
+        },
+        {
+          "svg": "HarePhotographer"
+        },
+        {
+          "svg": "HeartWithWings"
+        },
+        {
+          "src": "pop-music-kiss-by-hayley-kiyoko"
+        },
+        {
+          "src": "alexa-demie-dancing-by-euphoria"
+        },
+        {
+          "svg": "MoneyWithWings"
+        }
+      ]
+    },
+    "images2": {
+      "items": [
+        {
+          "svg": "Camera"
+        }
+      ]
+    }
+  },
+  "vibe": {
+    "title": {
+      "type": "h2",
+      "text": "Think you’ve<br class='mobile'> got the <b>vibe</b>?"
+    },
+    "descr": "Whether you’re dreaming of a<br class='mobile'> Heartstopper-style meet-cute or<br> you’ve been plotting your <b>10 Things I<br class='mobile'> Hate About You serenade<br class='desktop'> moment</b>,<br class='mobile'> this is your chance to make it<br class='mobile'> happen. Apply now and<br class='desktop'> start living<br class='mobile'> your movie dream IRL!",
+    "btn": {
+      "text": "Apply for the Role",
+      "link": "https://flureapp.typeform.com/dreamjob?typeform-source=knowledge.sdventures.com"
+    }
+  },
+  "moodBoard": {
+    "images": [
+      {
+        "src": "noah-love-by-netflix"
+      },
+      {
+        "src": "letter",
+        "format": "jpg"
+      },
+      {
+        "src": "criterion-collection-falling-by-filmstruck"
+      },
+      {
+        "src": "call",
+        "format": "jpg"
+      },
+      {
+        "src": "ryan-gosling-kiss"
+      }
+    ]
+  }
+}

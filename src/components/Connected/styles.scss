@@ -1,0 +1,24 @@
+.connected {
+  color: var(--white);
+  line-height: 0.98;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &--dark {
+    color: var(--black);
+  }
+
+  & span {
+    font-family: var(--font-parisienne);
+    font-weight: 400;
+  }
+
+  @include des {
+    font-size: d(100);
+  }
+
+  @include mob {
+    font-size: m(50);
+    margin-bottom: m(15);
+  }
+}

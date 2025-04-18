@@ -1,0 +1,57 @@
+---
+import "../styles/global.scss";
+
+import Head from "../components/Head";
+import Wrap from "../components/Wrap";
+import Title from "../components/Title";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Preloader from "../components/Preloader";
+import PageTransition from "../components/PageTransition";
+import ScrollSmooth from "../components/ScrollSmooth";
+import GTM from "../components/GTM.astro";
+
+import ROUTES from "../routes";
+const rout = ROUTES["guidelines"];
+
+export interface Props {
+  title: string;
+  descr: string;
+  lastUpdated: string;
+  frontmatter: {
+    title: string;
+    descr: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+
+const metadata = {
+  title: frontmatter.title,
+  descr: frontmatter.descr,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <Head metadata={metadata} />
+  <body class={rout.theme}>
+    <Preloader />
+    <PageTransition />
+    <Header client:only="react" pathname={rout.pathname} />
+    <main class="content content--community">
+      <Wrap>
+        <Title
+          title={{
+            type: "h1",
+            text: "Comm<span>u</span>nity<br> Gui<span>d</span>lines",
+          }}
+        />
+        <slot />
+      </Wrap>
+      <Footer pathname={rout.pathname} bodyColor={rout.themeFooter} />
+    </main>
+    <ScrollSmooth client:only="react" />
+    <GTM />
+  </body>
+</html>

@@ -1,0 +1,11 @@
+---
+const { message } = Astro.props;
+const { avatar, text } = message;
+---
+
+<div class="phone__message phone__message--default">
+  <div class="phone__message-avatar">
+    <img src={avatar} alt="Message Avatar" />
+  </div>
+  <p class="phone__message-text" set:html={text} />
+</div>

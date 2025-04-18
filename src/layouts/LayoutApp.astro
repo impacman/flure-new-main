@@ -1,0 +1,20 @@
+---
+import Head from "../components/Head";
+import "../styles/global.scss";
+
+export interface Props {
+  metadata: {
+    title: string;
+    descr: string;
+  };
+  bodyColor?: string;
+}
+
+const { metadata, bodyColor } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="hide">
+  <Head metadata={metadata} />
+  <body class={bodyColor}></body>
+</html>

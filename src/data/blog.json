@@ -1,0 +1,71 @@
+{
+  "blogs": [
+    {
+      "name": "Making Dull Chats Spicy on Flure",
+      "link": "/blog/dating-tips/how-to-turn-dull-chats-into-spicy-conversations/",
+      "img": {
+        "src": "1"
+      }
+    },
+    {
+      "name": "How to Be The<br> Most Popular Kid in&nbsp;The&nbsp;Room",
+      "link": "/blog/trending/boost-your-popularity-on-flure/",
+      "img": {
+        "src": "2"
+      }
+    },
+    {
+      "name": "The Ultimate Emoji Guide for Memorable Chats",
+      "link": "/blog/relationships/ultimate-guide-to-sexy-emojis/",
+      "img": {
+        "src": "3"
+      }
+    },
+    {
+      "name": "Knock-Knock! Are You&nbsp;Sex-Positive?",
+      "link": "/blog/sex-positivity/how-to-know-if-you-are-sex-positive/",
+      "img": {
+        "src": "4"
+      }
+    },
+    {
+      "name": "LGBTQIA<br>Empowered",
+      "link": "/blog/identities/7-ways-how-flure-empowers-lgbtqia-women/",
+      "img": {
+        "src": "5"
+      }
+    },
+    {
+      "name": "Making Dull Chats Spicy&nbsp;on&nbsp;Flure",
+      "link": "/blog/dating-tips/how-to-turn-dull-chats-into-spicy-conversations/",
+      "img": {
+        "src": "6"
+      }
+    },
+    {
+      "name": "How to Be The<br> Most Popular Kid in&nbsp;The&nbsp;Room",
+      "link": "/blog/trending/boost-your-popularity-on-flure/",
+      "img": {
+        "src": "2"
+      }
+    },
+    {
+      "name": "Knock-Knock! Are You&nbsp;Sex-Positive?",
+      "link": "/blog/sex-positivity/how-to-know-if-you-are-sex-positive/",
+      "img": {
+        "src": "4"
+      }
+    },
+    {
+      "name": "LGBTQIA<br>Empowered",
+      "link": "/blog/identities/7-ways-how-flure-empowers-lgbtqia-women/",
+      "img": {
+        "src": "5"
+      }
+    }
+  ],
+  "more": {
+    "text": "go to blog",
+    "link": "/blog"
+  }
+}

@@ -1,0 +1,95 @@
+.store {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: inherit;
+
+  transition: background-color 0.5s ease 0s;
+
+  @include des {
+    padding: d(8) d(22);
+    grid-gap: d(12);
+  }
+
+  @include mob {
+    padding: m(7) m(12) m(9);
+    grid-gap: m(6);
+  }
+
+  [data-header-style="/about-us"] & {
+    background-color: var(--mauve);
+  }
+
+  [data-header-style="/contact-us"] &,
+  [data-header-style="/privacy"] &,
+  [data-header-style="/community-guidelines"] &,
+  [data-header-style="/terms-condition"] &,
+  [data-header-style="nav"] & {
+    background-color: var(--pink);
+  }
+
+  [data-header-style="/faq"] & {
+    background-color: var(--black);
+  }
+
+  & svg {
+    height: auto;
+    pointer-events: none;
+
+    @include des {
+      width: d(26);
+    }
+
+    @include mob {
+      width: m(14);
+    }
+
+    & path {
+      transition-property: fill, stroke;
+      @include easy();
+
+      [data-header-style="/about-us"] &,
+      [data-header-style="/contact-us"] &,
+      [data-header-style="/privacy"] &,
+      [data-header-style="/community-guidelines"] &,
+      [data-header-style="/terms-condition"] &,
+      [data-header-style="nav"] & {
+        fill: var(--black);
+        stroke: var(--black);
+      }
+
+      [data-header-style="/faq"] & {
+        fill: var(--white);
+        stroke: var(--white);
+      }
+    }
+  }
+
+  &__type {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    pointer-events: none;
+
+    [data-header-style="/about-us"] &,
+    [data-header-style="/contact-us"] &,
+    [data-header-style="/privacy"] &,
+    [data-header-style="/community-guidelines"] &,
+    [data-header-style="/terms-condition"] &,
+    [data-header-style="nav"] & {
+      color: var(--black);
+    }
+
+    [data-header-style="/faq"] & {
+      color: var(--white);
+    }
+
+    @include des {
+      font-size: d(24.376);
+    }
+
+    @include mob {
+      font-size: m(13);
+    }
+  }
+}

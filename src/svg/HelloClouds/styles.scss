@@ -1,0 +1,37 @@
+.clouds--hello {
+  z-index: 9;
+  background-color: var(--transparent);
+
+  & .cloud {
+    position: absolute;
+    z-index: 1;
+
+    &--pink path {
+      fill: var(--pink);
+    }
+
+    &__wrap {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include des {
+      width: d(var(--wd));
+      height: d(var(--hd));
+    }
+
+    &--1 {
+      @include des {
+        left: d(-167);
+        bottom: d(85);
+      }
+    }
+
+    &--2 {
+      @include des {
+        top: d(421);
+        right: d(-270);
+      }
+    }
+  }
+}

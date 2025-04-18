@@ -1,0 +1,307 @@
+.kinks-guide {
+  position: relative;
+  width: 100vw;
+
+  background-color: var(--black);
+  overflow: hidden;
+
+  @include des {
+    min-height: d(8000);
+  }
+
+  @include mob {
+    min-height: m(8000);
+  }
+
+  &__top-container {
+    position: relative;
+    @include des {
+      padding: d(260) d(156) d(24);
+    }
+  
+    @include mob {
+      padding: m(148) m(34) m(43) m(27);
+    }
+
+    .title {
+      color: var(--white);
+
+      @include mob {
+        margin-bottom: m(36);
+      }
+
+      br {
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    .descr {
+      color: var(--white);
+
+      br {
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    &__splash-image {
+      position: absolute;
+
+      @include des {
+        width: d(120);
+        height: d(101);
+        top: d(260);
+        right: d(216);
+      }
+    
+      @include mob {
+        display: none;
+      }
+    }
+  }
+
+  &__description-container {
+    position: relative;
+    z-index: 2;
+
+    @include mob {
+      height: m(900);
+    }
+
+    .perfume-pastel__wrapper {
+      @include mob {
+        display: none;
+      }
+    }
+
+    .descr {
+      position: absolute;
+      top: 0;
+
+      @include des {
+        padding: d(182) d(365) d(182) d(156);
+      }
+    
+      @include mob {
+        margin-top: m(80);
+        padding: m(0) m(28) m(170);
+        background-color: #D9BBF9;
+      }
+    }
+
+    &__eye-mask-image {
+      position: absolute;
+      z-index: 10;
+
+      @include des {
+        width: d(262);
+        height: d(273);
+        top: d(-65);
+        right: d(-48);
+      }
+    
+      @include mob {
+        width: m(189);
+        height: m(193);
+        bottom: m(-30);
+        right: 0;
+      }
+    }
+
+    &__toy-white-image {
+      position: absolute;
+
+      @include des {
+        width: d(145);
+        height: d(290);
+        top: d(77);
+        left: 0;
+      }
+    
+      @include mob {
+        display: none;
+      }
+    }
+
+    &__toy-black-image {
+      position: absolute;
+      z-index: 10;
+
+      @include des {
+        display: none;
+      }
+    
+      @include mob {
+        width: m(140);
+        height: m(193);
+        bottom: m(-10);
+      }
+    }
+  }
+
+  &__cards {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    z-index: 3;
+
+    @include des {
+      margin-top: d(-84);
+      column-gap: d(30);
+      row-gap: d(30);
+      padding-bottom: d(155);
+    }
+  
+    @include mob {
+      margin-top: m(-30);
+      row-gap: m(18);
+      padding-bottom: m(80);
+    }
+
+    .white-pastel__wrapper {
+      position: absolute;
+      left: 0;
+
+      @include des {
+        top: d(-87);
+      }
+    
+      @include mob {
+        top: m(-40);
+      }
+
+      .white-pastel {
+        @include mob {
+          width: 100vw;
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &__explore-and-date__wrapper {
+    position: relative;
+    z-index: 4;
+    
+    @include des {
+      margin-top: d(-30);
+      row-gap: d(25);
+    }
+  
+    @include mob {
+      margin-top: d(-50);
+      row-gap: m(14);
+    }
+
+    .pink-pastel__wrapper {
+      @include mob {
+        display: none;
+      }
+    }
+  }
+
+  &__explore-and-date {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+
+    @include des {
+      row-gap: d(25);
+    }
+  
+    @include mob {
+      row-gap: m(16);
+    }
+
+    .title {
+      @include des {
+        font-size: d(70);
+      }
+    
+      @include mob {
+        padding: 0 m(25);
+        font-size: m(50);
+      }
+
+      br {
+        @include mob {
+          display: none;
+        }
+      }
+    }
+
+    .share-nude-btn {
+      @include mob {
+        width: m(231);
+        height: m(62);
+        font-size: m(25);
+      }
+    }
+  }
+
+  &__footer {
+    position: relative;
+    background-color: #D9BBF9;
+
+    @include des {
+      margin-top: d(-40);
+      padding: d(135) d(467) d(80) d(115);
+    }
+  
+    @include mob {
+      margin-top: m(-20);
+      padding: m(30);
+    }
+
+    .descr {
+      margin-top: 0;
+    }
+
+    h2 {
+      font-family: var(--font-poppins);
+      color: var(--black);
+      font-weight: 200;
+      line-height: 150%;
+      z-index: 8;
+
+      @include des {
+        font-size: d(25);
+      }
+
+      @include mob {
+        font-size: m(18);
+      }
+    }
+
+    &__image {
+      position: absolute;
+      right: 0;
+
+      @include des {
+        width: d(417);
+        height: d(462);
+        top: d(75);
+      }
+    
+      @include mob {
+        display: none;
+      }
+    }
+  }
+}
+

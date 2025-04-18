@@ -1,0 +1,132 @@
+.quiz {
+  position: relative;
+  width: 100%;
+
+  &__head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: m(60);
+    padding: m(6) m(24) m(6) m(20);
+    background-color: var(--transparent);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__arrow-down {
+    width: m(42);
+    height: m(42);
+    position: absolute;
+    right: m(18);
+    top: m(462);
+    border: m(1) solid var(--white);
+    border-radius: m(16);
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & svg {
+      width: m(25);
+      height: m(27);
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: m(160) m(19) m(280) m(28);
+    overflow: hidden;
+  }
+
+  &__wrap {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    width: 100%;
+
+    color: #fff;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+
+    &--h1 {
+      font-size: m(60);
+      margin-bottom: m(6);
+      color: var(--white);
+    }
+
+    &--h2 {
+      font-size: m(30);
+      margin-top: m(78);
+      color: var(--black);
+    }
+  }
+
+  &__descr {
+    width: 100%;
+    color: var(--white);
+    font-family: var(--font-poppins);
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: m(17);
+
+    &--black {
+      color: var(--black);
+    }
+  }
+
+  &__link {
+    height: m(55);
+    padding: 0 m(24);
+    font-family: var(--font-poppins);
+    font-size: m(18);
+    font-weight: 300;
+    text-transform: uppercase;
+    border-radius: m(100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0 auto;
+
+    &--main {
+      margin: m(34) auto m(270);
+      background-color: var(--mauve);
+      color: var(--black);
+    }
+
+    &--min {
+      background-color: var(--black);
+      color: var(--white);
+      margin-top: m(15);
+    }
+  }
+
+  & .balloon {
+    position: absolute;
+    top: m(86);
+    right: m(65);
+    width: m(102);
+    height: m(95);
+  }
+
+  & .bg {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52%) scale(1.03);
+    bottom: m(-190);
+    width: auto;
+    height: m(1052);
+    z-index: 1;
+  }
+}

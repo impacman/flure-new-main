@@ -1,0 +1,22 @@
+.sex-positivity {
+  position: absolute;
+  z-index: 2;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    width: d(470);
+
+    top: d(1377);
+    right: d(283);
+  }
+
+  @include mob {
+    width: m(300);
+    top: m(1450);
+    left: m(26);
+  }
+}

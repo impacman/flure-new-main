@@ -1,0 +1,104 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 9999999;
+
+  @include des {
+    padding: d(24) d(26) d(24) d(48);
+  }
+
+  @include mob {
+    padding: m(10) m(13);
+  }
+
+  &--pink {
+    .btn {
+      background-color: var(--pink);
+    }
+  }
+
+  &--black {
+    color: var(--white);
+
+    .btn {
+      color: var(--white);
+
+      svg path {
+        fill: var(--white);
+      }
+
+      .open-nav:not(.active) span {
+        background-color: var(--white);
+      }
+    }
+
+    .logo {
+      color: var(--white);
+
+      .logo__name {
+        color: var(--white);
+      }
+
+      svg {
+        width: inherit;
+        height: 100%;
+
+        path {
+          fill: var(--white);
+          stroke: var(--white);
+        }
+      }
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+
+    @include des {
+      grid-gap: d(26);
+    }
+
+    @include mob {
+      grid-gap: m(14);
+    }
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  transform: translate(-33%, -13%) rotate(-13deg);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease 0s;
+
+  &.show {
+    opacity: 1;
+  }
+
+  @include des {
+    width: d(177);
+    height: d(168);
+  }
+
+  @include mob {
+  }
+
+  & img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+}

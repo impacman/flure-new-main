@@ -1,0 +1,24 @@
+.we {
+  position: absolute;
+  z-index: 9;
+
+  &__svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    top: d(82.5);
+    right: d(194.95);
+    width: d(730.75);
+    height: d(1239.85);
+  }
+
+  @include mob {
+    width: m(310);
+    height: m(525);
+    top: m(173);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

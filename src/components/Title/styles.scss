@@ -1,0 +1,98 @@
+.title {
+  position: relative;
+  z-index: 9;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  & span {
+    font-family: var(--font-parisienne);
+    font-weight: 400;
+    line-height: 0.6;
+  }
+
+  &--main {
+    line-height: 98.5%;
+
+    @include des {
+      font-size: d(130);
+    }
+
+    @include mob {
+      font-size: m(60);
+    }
+  }
+
+  &--h1 {
+    line-height: 98.5%;
+
+    @include des {
+      font-size: d(130);
+    }
+
+    @include mob {
+      font-size: m(60);
+    }
+  }
+
+  &--h2 {
+    @include des {
+      font-size: d(100);
+    }
+
+    @include mob {
+      font-size: m(50);
+    }
+  }
+
+  &--h3 {
+    line-height: 98.5%;
+
+    @include des {
+      font-size: d(80);
+    }
+
+    @include mob {
+      font-size: m(40);
+    }
+  }
+
+  &--h4 {
+    line-height: 133%;
+
+    @include des {
+      font-size: d(50);
+    }
+
+    @include mob {
+      font-size: m(35);
+    }
+  }
+
+  &--h5 {
+    line-height: 100%;
+
+    @include des {
+      font-size: d(40);
+    }
+
+    @include mob {
+      font-size: m(25);
+    }
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--white {
+    color: var(--white);
+  }
+
+  &--black {
+    color: var(--black);
+  }
+
+  &--pink {
+    color: var(--pink);
+  }
+}

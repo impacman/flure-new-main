@@ -1,0 +1,11 @@
+{
+  "title": {
+    "type": "h2",
+    "color": "white",
+    "text": "<span>O</span>ur<br class='mobile'> Mission"
+  },
+  "descr": {
+    "text": "We are all about <b>pleasure and safety</b>. Find that spot, <b>itch</b>, <b>kiss</b>, <b>tickle</b>, <b>laugh</b> — and never be<br class='desktop'> judged!",
+    "color": "white"
+  }
+}

@@ -1,0 +1,85 @@
+.message-bubbles {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @include des {
+    top: d(600);
+    height: d(613);
+    padding-left: d(103);
+    padding-right: d(95);
+  }
+
+  @include mob {
+    display: none;
+  }
+}
+
+.first-message-bubble,
+.second-message-bubble {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & span {
+    position: absolute;
+    z-index: 4;
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    @include des {
+      font-size: d(25);
+    }
+
+    @include mob {
+      font-size: m(25);
+    }
+  }
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.first-message-bubble {
+  align-self: flex-start;
+  @include des {
+    height: d(290);
+    width: d(390);
+  }
+
+  @include mob {
+  }
+
+  & span {
+    @include des {
+      padding: 0 d(27) d(40) d(45);
+    }
+
+    @include mob {
+    }
+  }
+}
+
+.second-message-bubble {
+  align-self: flex-end;
+  @include des {
+    height: d(270);
+    width: d(513);
+  }
+
+  @include mob {
+  }
+
+  & span {
+    @include des {
+      padding: 0 d(30) d(35) d(45);
+    }
+
+    @include mob {
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "title": {
+    "type": "h2",
+    "color": "white",
+    "text": "<span>O</span>ur team"
+  },
+  "descr": {
+    "text": "of dating pros, seasoned sex and psychology experts, and rockstar support assistants – all here to accompany you on your journey.",
+    "color": "white"
+  },
+  "teams": [
+    {
+      "id": "sasha",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Sasha Img"
+      },
+      "name": "Sasha",
+      "descr": "As we work from <b>all corners of the world</b>, creativity flows like confetti at a fabulous party.",
+      "position": "bottom"
+    },
+    {
+      "id": "tali",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Tali Img"
+      },
+      "name": "Tali",
+      "descr": "Our worldwide outlook lets us ride the trends and <b>connect with our audience</b> like never before.",
+      "position": "bottom"
+    },
+    {
+      "id": "anna",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Anna Img"
+      },
+      "name": "Anna",
+      "descr": "We're <b>not just a brand</b> – we're a sensational community celebrating love and positivity!",
+      "position": "bottom"
+    },
+    {
+      "id": "daria",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Daria Img"
+      },
+      "name": "Daria",
+      "descr": "At the heart of it all is YOU, and we're always innovating to bring you exciting new features that guarantee a good time!",
+      "position": "bottom"
+    },
+    {
+      "id": "mary",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Mary Img"
+      },
+      "name": "Mary",
+      "descr": "It's all about <b>having your back</b>, every step of the way!",
+      "position": "bottom"
+    },
+    {
+      "id": "nastya",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Nastya Img"
+      },
+      "name": "Nastya",
+      "descr": "With passion and heart, we create an empowering dating experience for ourselves and for you.",
+      "position": "bottom"
+    },
+    {
+      "id": "anna2",
+      "img": {
+        "src": "/images/teams/",
+        "alt": "Anna Img"
+      },
+      "name": "Anna",
+      "descr": "Creating connections worldwide, our team transforms dating into a vibrant celebration of diversity, openness, and freedom.",
+      "position": "bottom"
+    },
+    {
+      "id": "Men",
+      "svg": "Men",
+      "name": "Men",
+      "descr": "We're <b>shaping the future</b> of inclusive and sex-positive dating, rocking the boat in the best way possible!",
+      "position": "bottom"
+    }
+  ]
+}

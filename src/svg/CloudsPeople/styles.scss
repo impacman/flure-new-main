@@ -1,0 +1,74 @@
+.clouds--people {
+  z-index: 7;
+  background-color: var(--transparent);
+
+  & .cloud {
+    position: absolute;
+    z-index: 1;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+    }
+
+    &--1 {
+      @include des {
+        width: d(485);
+        height: d(449);
+        left: d(-18);
+        bottom: d(163);
+      }
+    }
+
+    &--2 {
+      @include des {
+        width: d(539);
+        height: d(378);
+        top: d(119);
+        right: d(-101);
+      }
+    }
+
+    &--3 {
+      @include des {
+        width: d(441);
+        height: d(443);
+        right: d(355);
+        bottom: d(-118);
+      }
+
+      @include mob {
+        width: m(311);
+        height: m(313);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: m(-75);
+      }
+
+      @include minmob {
+        width: m(218);
+        height: m(219);
+      }
+    }
+
+    &--wave {
+      width: 100%;
+      left: 0;
+      z-index: 2;
+
+      @include des {
+        bottom: d(-2);
+        height: d(41);
+      }
+
+      @include mob {
+        bottom: m(-2);
+        height: m(21);
+      }
+    }
+  }
+}

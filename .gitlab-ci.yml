@@ -1,0 +1,63 @@
+---
+stages:
+  - build_live
+  - deploy_live
+
+
+.build:
+  image: gitlab.stage.stage:4567/ci-tools/docker-builder-dind:2.1.0
+  before_script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  script:
+    - export IMAGE_TAG=${CI_COMMIT_TAG:-feature}-${CI_COMMIT_SHORT_SHA}
+    - echo "IMAGE_TAG=${IMAGE_TAG}"
+    - docker build
+      --cache-from "$CI_REGISTRY_IMAGE:latest"
+      -t "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
+      -t "$CI_REGISTRY_IMAGE:latest"
+      .
+    - docker push "$CI_REGISTRY_IMAGE:$IMAGE_TAG"
+    - docker push "$CI_REGISTRY_IMAGE:latest"
+  stage: build
+  tags:
+    - dind
+
+build [live]:
+  extends: .build
+  stage: build_live
+  environment:
+    name: production
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "api" && $LIVE == "true"
+
+.deploy:
+  stage: deploy
+  variables:
+    ENVIRONMENT: kaas
+    UPSTREAM_CI_COMMIT_TAG: ${CI_COMMIT_TAG}
+    UPSTREAM_CI_COMMIT_SHORT_SHA: ${CI_COMMIT_SHORT_SHA}
+  trigger:
+    project: argo-cd/flure-landing
+    strategy: depend
+
+deploy [live-f0]:
+  extends: .deploy
+  stage: deploy_live
+  variables:
+    ENVIRONMENT: f0-mgmt-sdg
+    SERVICE: flure-landing
+    STAGE: live
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "api" && $LIVE == "true"
+      when: manual
+
+deploy [live-f1]:
+  extends: .deploy
+  stage: deploy_live
+  variables:
+    ENVIRONMENT: f1-mgmt-sdg
+    SERVICE: flure-landing
+    STAGE: live
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "api" && $LIVE == "true"
+      when: manual

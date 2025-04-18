@@ -1,0 +1,23 @@
+.inclusivity {
+  position: absolute;
+  z-index: 2;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    width: d(540);
+
+    top: d(1877);
+    left: d(240);
+  }
+
+  @include mob {
+    width: m(387);
+
+    top: m(1980);
+    left: m(-20);
+  }
+}

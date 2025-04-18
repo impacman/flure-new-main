@@ -1,0 +1,90 @@
+{
+  "items": [
+    {
+      "id": "about",
+      "link": "/about-us",
+      "text": "About us",
+      "nav": true,
+      "color": "mauve"
+    },
+    {
+      "id": "blog",
+      "link": "/blog",
+      "text": "Our Blog",
+      "nav": true,
+      "color": "pink"
+    },
+    {
+      "id": "contact",
+      "link": "https://help-center.flure.com/en",
+      "text": "Support",
+      "nav": true,
+      "color": "pink"
+    },
+    {
+      "id": "faq",
+      "link": "/faq",
+      "text": "Faq",
+      "footer": true,
+      "nav": true,
+      "color": "black"
+    },
+    {
+      "id": "sign-up",
+      "link": "/app",
+      "text": "Sign up",
+      "nav": true,
+      "color": "black",
+      "desktopOnly": true
+    },
+    {
+      "id": "privacy-policy",
+      "link": "/privacy",
+      "text": "Privacy policy",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "app-store",
+      "link": "https://flure.onelink.me/4Xrl/8uuflpor",
+      "text": "app store",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "community-guidelines",
+      "link": "/community-guidelines",
+      "text": "Community guidelines",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "terms-condition",
+      "link": "/terms-condition",
+      "text": "Terms&Conditions",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "google-play",
+      "link": "https://flure.onelink.me/4Xrl/wqruqavj",
+      "text": "Google Play",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "download",
+      "link": "https://flure.onelink.me/4Xrl/8uuflpor",
+      "text": "download",
+      "footer": true,
+      "color": "pink"
+    },
+    {
+      "id": "terms-conditions-web",
+      "link": "/app/termsConditions",
+      "text": "Terms&Conditions",
+      "footer": true,
+      "color": "pink"
+    }
+  ]
+}

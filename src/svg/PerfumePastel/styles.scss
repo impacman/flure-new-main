@@ -1,0 +1,20 @@
+.perfume-pastel__wrapper {
+  position: relative;
+
+  @include des {
+    height: d(693);
+  }
+
+  @include mob {
+    height: m(670);
+  }
+
+  & .perfume-pastel {
+    position: absolute;
+
+    & svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

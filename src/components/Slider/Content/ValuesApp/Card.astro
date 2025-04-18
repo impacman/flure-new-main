@@ -1,0 +1,19 @@
+---
+const { card } = Astro.props;
+const { text: textCard, message } = card;
+const { avatar, text } = message;
+---
+
+<div class="phone__card">
+  <div class="phone__message phone__message--card">
+    <div class="phone__message-avatar">
+      <img src={avatar} alt="Message Avatar" />
+    </div>
+    <p class="phone__message-text">
+      {text}
+    </p>
+  </div>
+  <div class="phone__card-wrap">
+    <p class="phone__card-text">{textCard}</p>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.safety {
+  position: absolute;
+  z-index: 2;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    width: d(550);
+
+    top: d(177);
+    right: d(121);
+  }
+
+  @include mob {
+    width: m(276);
+    top: m(323);
+    right: 50%;
+    transform: translateX(50%) rotate(4.792deg);
+  }
+}

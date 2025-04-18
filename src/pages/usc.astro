@@ -1,0 +1,26 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import ROUTES from "../routes";
+const rout = ROUTES["usc"];
+
+const metadata = {
+  title: "Flure Dating App | Meet & Chat with Like-Minded People",
+  descr:
+    "Welcome to Flure, a dating app that empowers you to embrace your true self and explore your desires. Meet and chat with like-minded people. Alone or with a partner.",
+};
+---
+
+<Layout
+  metadata={metadata}
+  pathname={rout.pathname}
+  bodyColor={rout.theme}
+  headerColor={rout.themeHeader}
+  scrollSmooth={rout.scrollSmooth}
+  disableHeader={rout.disableHeader}
+  disableFooter={rout.disableFooter}
+/>
+
+<script>
+  window.location.href = "https://flure.onelink.me/4Xrl/ry5h3fez";
+</script>

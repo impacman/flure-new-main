@@ -1,0 +1,23 @@
+---
+const { item, id } = Astro.props;
+const { img, name, text } = item;
+
+import ReviewsWave from "../../../svg/ReviewsWave";
+---
+
+<div class="slider__item swiper-slide">
+  <div class="slider__item-wrap">
+    {
+      img && (
+        <div class="slider__item-img">
+          <img src={img} alt="Review" />
+        </div>
+      )
+    }
+    {name && <span class="slider__item-name">{name}</span>}
+    {text && <p class="slider__item-text">{text}</p>}
+  </div>
+  <div class="slider__item-wave">
+    <ReviewsWave id={id} client:only="react" />
+  </div>
+</div>

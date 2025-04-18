@@ -1,0 +1,12 @@
+---
+import "./styles.scss";
+import valuesApp from "../../data/values_app.json";
+
+import Slider from "../Slider";
+import ValuesAppWave from "../../svg/ValuesAppWave";
+---
+
+<section class="values-app">
+  {valuesApp.items && <Slider id={"values-app"} items={valuesApp.items} />}
+  <ValuesAppWave client:only="react" />
+</section>

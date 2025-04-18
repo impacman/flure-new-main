@@ -1,0 +1,13 @@
+---
+import LayoutApp from "../layouts/LayoutApp.astro";
+
+import ROUTES from "../routes";
+const rout = ROUTES["app"];
+
+const metadata = {
+  title: "App",
+  descr: "",
+};
+---
+
+<LayoutApp metadata={metadata} bodyColor={rout.theme} />

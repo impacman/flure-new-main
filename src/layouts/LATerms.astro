@@ -1,0 +1,57 @@
+---
+import "../styles/global.scss";
+
+import Head from "../components/Head";
+import Wrap from "../components/Wrap";
+import Title from "../components/Title";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Preloader from "../components/Preloader";
+import PageTransition from "../components/PageTransition";
+import ScrollSmooth from "../components/ScrollSmooth";
+import GTM from "../components/GTM.astro";
+
+import ROUTES from "../routes";
+const rout = ROUTES["termsLa"];
+
+export interface Props {
+  title: string;
+  descr: string;
+  lastUpdated: string;
+  frontmatter: {
+    title: string;
+    descr: string;
+  };
+}
+
+const { frontmatter } = Astro.props;
+
+const metadata = {
+  title: frontmatter.title,
+  descr: frontmatter.descr,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <Head metadata={metadata} />
+  <body class={rout.theme}>
+    <Preloader />
+    <PageTransition />
+    <Header client:only="react" transition:persist pathname={rout.pathname} />
+    <main class="content content--community">
+      <Wrap>
+        <Title
+          title={{
+            type: "h1",
+            text: "Te<span>r</span>ms<span>&</span><br> Con<span>d</span>itions for the Prize Draw at USC Campus (California)",
+          }}
+        />
+        <slot />
+      </Wrap>
+      <Footer pathname={"/promo-la-terms"} bodyColor={rout.themeFooter} />
+    </main>
+    <ScrollSmooth client:only="react" />
+    <GTM />
+  </body>
+</html>

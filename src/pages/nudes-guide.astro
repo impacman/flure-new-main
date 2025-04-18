@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import NudesGuide from "../components/NudesGuide";
+
+import ROUTES from "../routes";
+const rout = ROUTES["nudes"];
+
+const metadata = {
+  title: "Guide to Nudes | Flure",
+  descr:
+    "Unleash your confidence with our expert tips on taking hot nudes. Perfect for exploring your artistic side with the lighting, poses, mirrors, and partner.",
+};
+---
+
+<Layout
+  metadata={metadata}
+  pathname={rout.pathname}
+  bodyColor={rout.theme}
+  statusBarColor={rout.themeStatusBar}
+  scrollSmooth={rout.scrollSmooth}
+>
+  <NudesGuide />
+</Layout>

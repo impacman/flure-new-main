@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flure-landing
+  labels:
+    app: flure-landing
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flure-landing
+  template:
+    metadata:
+      labels:
+        app: flure-landing
+    spec:
+      containers:
+        - name: flure-landing
+          image: clickocean.io/automation/image
+          resources:
+            requests:
+              cpu: 50m
+              memory: 200Mi
+            limits:
+              cpu: 50m
+              memory: 200Mi
+      imagePullSecrets:
+        - name: regcred

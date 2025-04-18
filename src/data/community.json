@@ -1,0 +1,61 @@
+{
+  "title": {
+    "type": "h2",
+    "text": "FIND WHAT<br> YOU’LL Like! ",
+    "color": "black"
+  },
+  "descr": {
+    "text": "Your rules, your fantasies, your likes: everything can<br class='desktop'> happen at your pace!",
+    "color": "black"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": {
+        "type": "h5",
+        "text": "PLAYING SAFE",
+        "color": "black"
+      },
+      "descr": {
+        "text": "We care deeply for <b>safe<br class='mobile'> exploration</b>, so any sister<br class='mobile'> feels<br class='desktop'> she can be herself on<br class='mobile'> Flure and chat comfortably.",
+        "color": "black"
+      }
+    },
+    {
+      "id": 2,
+      "title": {
+        "type": "h5",
+        "text": "MEET PEOPLE &<br class='mobile'> HAVE FUN",
+        "color": "black"
+      },
+      "descr": {
+        "text": "<b>Real</b> people with free minds &<br class='mobile'> right vibes.. The Sparks<br class='desktop'> Game lets<br class='mobile'> you dive deeper into their<br class='mobile'> background,<br class='desktop'> fantasies, and<br class='mobile'> desires. You can play <b class='desktop'>solo or with<br class='mobile'> partner</b>.",
+        "color": "black"
+      }
+    },
+    {
+      "id": 3,
+      "title": {
+        "type": "h5",
+        "text": "THE WORLD IS<br class='mobile'> YOUR OYSTER",
+        "color": "black"
+      },
+      "descr": {
+        "text": "Find a local someone or enter<br class='mobile'> the Virtual<br class='desktop'> Realm for people<br class='mobile'> from <b>all over the planet</b>.",
+        "color": "black"
+      }
+    },
+    {
+      "id": 4,
+      "title": {
+        "type": "h5",
+        "text": "INCLUSIVITY",
+        "color": "white"
+      },
+      "descr": {
+        "text": "Everyone can play at Flure; there is <b>no<br> judgment or prejudice.</br>",
+        "color": "white"
+      }
+    }
+  ]
+}

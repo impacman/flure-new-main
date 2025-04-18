@@ -1,0 +1,21 @@
+---
+import blog from "../../data/blog.json";
+import "./styles.scss";
+
+const { blogs, more } = blog;
+
+import Slider from "../Slider";
+---
+
+<section class="blog">
+  {blogs && <Slider id={"blog"} items={blogs} />}
+  {
+    more && (
+      <div class="blog__more">
+        <a target="_blank" class="blog__more-link" href={more.link}>
+          <span>{more.text}</span>
+        </a>
+      </div>
+    )
+  }
+</section>

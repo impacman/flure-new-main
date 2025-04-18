@@ -1,0 +1,29 @@
+$mediaDesktop: 576px;
+$mediaMobile: $mediaDesktop - 1px;
+$mediaTablet: 1024px;
+$mediaMinMobWidth: 375px;
+$mediaMinMobHeight: 700px;
+
+@mixin des {
+  @media only screen and (min-width: $mediaDesktop) {
+    @content;
+  }
+}
+
+@mixin mob {
+  @media only screen and (max-width: $mediaMobile) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media only screen and (min-width: $mediaDesktop) and (max-width: $mediaTablet) and (max-height: $mediaMobile) {
+    @content;
+  }
+}
+
+@mixin minmob {
+  @media only screen and (max-width: $mediaMinMobWidth) and (max-height: $mediaMinMobHeight) {
+    @content;
+  }
+}

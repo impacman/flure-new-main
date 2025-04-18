@@ -1,0 +1,292 @@
+---
+import "./styles.scss";
+
+import nudes_guide from "../../data/nudes_guide.json";
+
+import Title from "../Title";
+import Descr from "../Descr";
+import NudesWoman from "../../svg/NudesWoman";
+import NudesWomanWithKnife from "../../svg/NudesWomanWithKnife";
+import NudesWave from "../../svg/NudesWave";
+import WhitePinkPastel from "../../svg/WhitePinkPastel";
+import BlackPastel from "../../svg/BlackPastel";
+import BlackPastelBig from "../../svg/BlackPastelBig";
+import WhitePastel from "../../svg/WhitePastel";
+import BookmarkFirst from "../../svg/BookmarkFirst";
+import BookmarkSecond from "../../svg/BookmarkSecond";
+import PinkPastel from "../../svg/PinkPastel";
+import MessageBubbles from "../MessageBubbles";
+import InfluencerQuote from "../InfluencerQuote";
+import ShareNudeButton from "../ShareNudeButton";
+
+const SECTIONS_ANCHORS = {
+  WHAT_IS_A_NUDE: "what-is-a-nude",
+  IDEAS_FOR_POSING: "ideas-for-posing",
+  HOW_TO_ASK_AND_SEND: "how-to-ask-and-send",
+  WHAT_IF_LEAKED: "what-if-leaked",
+};
+---
+
+<section class="nudes-guide">
+  <div class="nudes-guide__wrap">
+    <Title title={nudes_guide.title} />
+  </div>
+  <NudesWave />
+  <NudesWoman />
+  <MessageBubbles />
+  <div class="nudes-guide__content">
+    <div class="nudes-guide__info mb-50">
+      <div class="anchors-list">
+        {
+          Object.values(SECTIONS_ANCHORS).map((anchor) => (
+            <a href={`#${anchor}`}>{nudes_guide["sections-anchors"][anchor]}</a>
+          ))
+        }
+      </div>
+
+      <div id={SECTIONS_ANCHORS.WHAT_IS_A_NUDE} class="mb-50">
+        <Title
+          className="small-title"
+          title={nudes_guide["what-is-a-nude-title"]}
+        />
+      </div>
+      <Descr descr={nudes_guide["what-is-a-nude-descr"]} />
+    </div>
+    <div class="nudes-guide__info mb-200">
+      <div class="mb-50">
+        <Title
+          className="small-title"
+          title={nudes_guide["how-to-take-a-nude-title"]}
+        />
+      </div>
+      <Descr descr={nudes_guide["how-to-take-a-nude-descr"]} />
+    </div>
+
+    <div class="nudes-guide__section-one">
+      <div class="quote nudes-guide__info">
+        <div class="quote__mb">
+          <InfluencerQuote quote={nudes_guide.quotes.nadia} />
+        </div>
+        <InfluencerQuote quote={nudes_guide.quotes.catherine} />
+      </div>
+      <BookmarkFirst />
+      <WhitePinkPastel />
+
+      <div
+        id={SECTIONS_ANCHORS.IDEAS_FOR_POSING}
+        class="nudes-guide__info max-w-auto"
+      >
+        <div class="mb-34">
+          <Title title={nudes_guide["ideas-for-posing-title"]} />
+        </div>
+        <Descr descr={nudes_guide["ideas-for-posing-descr"]} />
+      </div>
+
+      <div class="nudes-guide__info-with-photo-right">
+        <div class="nudes-guide__info-with-photo-right__text">
+          <div class="mb-34">
+            <Title className="small-title" title={nudes_guide["poses-title"]} />
+          </div>
+          <Descr descr={nudes_guide["poses-descr"]} />
+        </div>
+
+        <img src={nudes_guide["poses-img"]} />
+      </div>
+    </div>
+
+    <div class="nudes-guide__section-two">
+      <BlackPastel />
+
+      <div class="quote nudes-guide__info">
+        <InfluencerQuote color="white" quote={nudes_guide.quotes.mac} />
+      </div>
+
+      <div class="nudes-guide__info-with-photo-left">
+        <img src={nudes_guide["lighting-and-angles-img"]} />
+
+        <div class="nudes-guide__info-with-photo-left__text">
+          <div class="mb-34">
+            <Title
+              className="small-title"
+              title={nudes_guide["lighting-and-angles-title"]}
+            />
+          </div>
+          <Descr descr={nudes_guide["lighting-and-angles-descr"]} />
+        </div>
+      </div>
+    </div>
+
+    <div class="nudes-guide__section-three">
+      <WhitePinkPastel />
+      <div class="quote nudes-guide__info">
+        <div class="mb-240">
+          <InfluencerQuote quote={nudes_guide.quotes.sara} />
+        </div>
+        <InfluencerQuote quote={nudes_guide.quotes.haley} />
+      </div>
+
+      <div class="nudes-guide__info-with-photo-right">
+        <div class="nudes-guide__info-with-photo-left__text">
+          <div class="mb-34">
+            <Title
+              className="small-title"
+              title={nudes_guide["selfie-approach-title"]}
+            />
+          </div>
+          <Descr descr={nudes_guide["selfie-approach-descr"]} />
+        </div>
+
+        <img src={nudes_guide["selfie-approach-img"]} />
+      </div>
+    </div>
+
+    <div class="nudes-guide__section-four">
+      <WhitePastel />
+      <div class="quote nudes-guide__info">
+        <InfluencerQuote quote={nudes_guide.quotes.carley} />
+      </div>
+
+      <div
+        id={SECTIONS_ANCHORS.HOW_TO_ASK_AND_SEND}
+        class="nudes-guide__info nudes-guide__how-to-ask-and-send-title"
+      >
+        <Title title={nudes_guide["how-to-ask-and-send-title"]} />
+      </div>
+
+      <div class="nudes-guide__how-to-ask">
+        <div class="nudes-guide__how-to-ask__descr">
+          <div class="mb-30">
+            <Title title={nudes_guide["be-tactful-title"]} />
+          </div>
+          <ul class="mb-70">
+            {
+              nudes_guide["be-tactful-list"].map((item) => (
+                <li>
+                  <Descr descr={{ text: item }} />
+                </li>
+              ))
+            }
+          </ul>
+          <div class="mb-30">
+            <Title title={nudes_guide["respect-boundaries-title"]} />
+          </div>
+          <ul class="mb-70">
+            {
+              nudes_guide["respect-boundaries-list"].map((item) => (
+                <li>
+                  <Descr descr={{ text: item }} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <div class="nudes-guide__how-to-ask__collage">
+          <img
+            class="nudes-guide__how-to-ask__collage__1"
+            src={nudes_guide["how-to-ask-img1"]}
+          />
+        </div>
+      </div>
+
+      <div class="nudes-guide__how-to-ask__invite__wrapper">
+        <PinkPastel />
+        <div class="nudes-guide__how-to-ask__invite">
+          <img class="plain" src={nudes_guide["how-to-ask-invite-plain-img"]} />
+          <div class="mb-34">
+            <Title
+              className="small-title"
+              title={nudes_guide["how-to-ask-invite-title"]}
+            />
+          </div>
+          <ShareNudeButton text={nudes_guide["get-to-it"]} />
+          <img class="heart" src={nudes_guide["how-to-ask-invite-heart-img"]} />
+        </div>
+      </div>
+
+      <div class="nudes-guide__how-to-ask-2">
+        <div class="nudes-guide__how-to-ask-2__collage">
+          <img
+            class="nudes-guide__how-to-ask-2__collage__1"
+            src={nudes_guide["how-to-ask-img2"]}
+          />
+        </div>
+        <div class="nudes-guide__how-to-ask-2__descr">
+          <div class="mb-30">
+            <Title title={nudes_guide["handle-denials-title"]} />
+          </div>
+          <ul class="mb-70">
+            {
+              nudes_guide["handle-denials-list"].map((item) => (
+                <li>
+                  <Descr descr={{ text: item }} />
+                </li>
+              ))
+            }
+          </ul>
+          <div class="mb-30">
+            <Title title={nudes_guide["if-they-say-yes-title"]} />
+          </div>
+          <ul class="mb-70">
+            {
+              nudes_guide["if-they-say-yes-list"].map((item) => (
+                <li>
+                  <Descr descr={{ text: item }} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="nudes-guide__section-five">
+      <WhitePastel />
+      <div class="quote nudes-guide__info">
+        <InfluencerQuote quote={nudes_guide.quotes.james} />
+      </div>
+
+      <div id={SECTIONS_ANCHORS.WHAT_IF_LEAKED} class="nudes-guide__info">
+        <h2
+          class="mb-70"
+          set:html={nudes_guide["what-to-do-if-leaked-title"]}
+        />
+        <Descr descr={nudes_guide["what-to-do-if-leaked-descr"]} />
+      </div>
+    </div>
+
+    <div class="nudes-guide__section-six">
+      <BlackPastelBig />
+      <BookmarkSecond />
+      <NudesWomanWithKnife />
+
+      <div class="quote nudes-guide__info">
+        <div class="nudes-guide__section-six__immediate-steps-descr">
+          <div class="mb-30">
+            <Title title={nudes_guide["immediate-steps-title"]} />
+          </div>
+          <ul class="mb-70">
+            {
+              nudes_guide["immediate-steps-list"].map((item) => (
+                <li class="white">
+                  <Descr descr={{ text: item, color: "white" }} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+        <img src={nudes_guide["immediate-steps-img"]} />
+      </div>
+
+      <div class="nudes-guide__info epilogue">
+        <div class="mb-50">
+          <Descr descr={nudes_guide["if-you-are-ready-descr"]} />
+        </div>
+        <p class="nudes-guide__section-six__why-wait">
+          {nudes_guide["why-wait"]}
+        </p>
+
+        <ShareNudeButton text={nudes_guide["find-someone-to-share"]} />
+      </div>
+    </div>
+  </div>
+</section>

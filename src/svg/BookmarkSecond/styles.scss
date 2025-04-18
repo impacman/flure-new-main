@@ -1,0 +1,15 @@
+.bookmark-second {
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include des {
+    height: d(277);
+  }
+
+  @include mob {
+    width: m(292);
+    height: m(217);
+  }
+}

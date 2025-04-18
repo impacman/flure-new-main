@@ -1,0 +1,7 @@
+---
+import "./styles.scss";
+
+const { text, dark } = Astro.props;
+---
+
+<p class=`connected${dark ? " connected--dark" : ""}` set:html={text} />

@@ -1,0 +1,17 @@
+---
+import "./styles.scss";
+
+import p404 from "../../data/404.json";
+import Clouds404 from "../../svg/Clouds404";
+
+const { title, descr, link } = p404;
+---
+
+<section class="p404">
+  <Clouds404 client:only="react" />
+  <div class="p404__wrap">
+    <h1 class="p404__title" set:html={title} />
+    <p class="p404__descr">{descr}</p>
+    <a class="p404__link" href={link.href}>{link.text}</a>
+  </div>
+</section>

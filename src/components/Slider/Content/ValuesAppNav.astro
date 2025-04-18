@@ -1,0 +1,43 @@
+---
+const { items } = Astro.props;
+---
+
+<div class="slider__values-nav">
+  <button class="nav-btn nav-btn--prev" data-slider-nav="prev">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="68"
+      height="65"
+      viewBox="0 0 68 65"
+      fill="none"
+    >
+      <path
+        d="M67 32.5L0.999997 32.5M0.999997 32.5C1.05522 25.6587 32.5445 24.9943 32.5445 0.999997M0.999997 32.5C1.05522 39.2773 32.5445 41.6024 32.5445 64"
+        stroke="var(--black)"
+        stroke-width="2"
+        stroke-linecap="round"></path>
+    </svg>
+  </button>
+  <button class="nav-btn nav-btn--next" data-slider-nav="next">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="68"
+      height="65"
+      viewBox="0 0 68 65"
+      fill="none"
+    >
+      <path
+        d="M67 32.5L0.999997 32.5M0.999997 32.5C1.05522 25.6587 32.5445 24.9943 32.5445 0.999997M0.999997 32.5C1.05522 39.2773 32.5445 41.6024 32.5445 64"
+        stroke="var(--black)"
+        stroke-width="2"
+        stroke-linecap="round"></path>
+    </svg>
+  </button>
+  <div class="nav-pag">
+    {
+      items.map((el: any) => (
+        <span class="nav-pag__el" data-slider-pagination />
+      ))
+    }
+  </div>
+</div>

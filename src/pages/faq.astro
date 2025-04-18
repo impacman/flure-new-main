@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Faq from "../components/Faq";
+
+import ROUTES from "../routes";
+const rout = ROUTES["faq"];
+
+const metadata = {
+  title: "FAQ | Flure",
+  descr:
+    "Get answers to common questions about Flure - a sex positive dating app . Learn about setup, matching and more.",
+};
+---
+
+<Layout metadata={metadata} pathname={rout.pathname} bodyColor={rout.theme}>
+  <Faq />
+</Layout>

@@ -1,0 +1,47 @@
+---
+import clsx from "clsx";
+
+import {
+  KinksGuideCardBlack,
+  KinksGuideCardFrenchLilac,
+  KinksGuideCardPerfume,
+} from "../../../../svg/KinksGuideCard";
+import { GuideCardLetter } from "../GuideCardLetter";
+import "./styles.scss";
+
+export type Card = {
+  letter: string;
+  title: string;
+  subtitle: string;
+  cardColor: "black" | "frenchLilac" | "perfume";
+};
+
+interface Props {
+  key: string;
+  card: Card;
+}
+
+const { card } = Astro.props;
+const { letter, title, subtitle, cardColor } = card || {};
+---
+
+<div class="kinks-guide__card-container">
+  {cardColor === "black" && <KinksGuideCardBlack />}
+  {cardColor === "frenchLilac" && <KinksGuideCardFrenchLilac />}
+  {cardColor === "perfume" && <KinksGuideCardPerfume />}
+  <GuideCardLetter letter={letter} />
+  <div class="kinks-guide__text-container">
+    <h2
+      class={clsx(
+        "kinks-guide__title",
+        cardColor === "black" && "kinks-guide__title--white",
+      )}>{title}</span
+    >
+    <span
+      class={clsx(
+        "kinks-guide__subtitle",
+        cardColor === "black" && " kinks-guide__subtitle--white",
+      )}>{subtitle}</span
+    >
+  </div>
+</div>

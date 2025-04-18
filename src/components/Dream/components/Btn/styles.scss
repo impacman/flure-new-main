@@ -1,0 +1,44 @@
+.dream-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  text-transform: uppercase;
+  transition-property: background-color, transform, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+
+  @include des {
+    height: d(79);
+    padding: 0 d(29);
+    border-radius: d(100);
+    font-size: d(35);
+    margin-top: d(35);
+  }
+
+  @include mob {
+    height: m(43.918);
+    padding: 0 m(27);
+    border-radius: m(100);
+    font-size: m(17.99);
+    margin-top: m(20);
+  }
+
+  @media (hover: hover) {
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--mauve);
+      color: var(--black);
+    }
+  }
+
+  &:active {
+    transition-duration: 0.2s;
+    transform: scale(0.95);
+  }
+}

@@ -1,0 +1,104 @@
+.kinks-guide__card-container { 
+  position: relative;
+
+  @include des {
+    width: d(565);
+    height: d(685);
+  }
+
+  @include mob {
+    width: m(340);
+    height: m(412);
+  }
+
+  .kinks-guide__card {
+    position: absolute;
+    left: 0;
+
+    @include des {
+      width: d(565);
+      height: d(685);
+    }
+  
+    @include mob {
+      width: m(340);
+      height: m(412);
+    }
+  }
+
+  .kinks-guide__letter-image {
+    position: absolute;
+    top: 0;
+  
+    svg {
+      @include des {
+        width: d(565);
+        height: d(381);
+      }
+    
+      @include mob {
+        width: m(330);
+        height: m(220);
+      }
+    }
+  }
+
+  .kinks-guide__text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
+    @include des {
+      top: d(397);
+      row-gap: d(20);
+      padding-left: d(55);
+      padding-right: d(22);
+    }
+
+    @include mob {
+      top: m(225);
+      row-gap: m(12);
+      padding-left: m(32);
+      padding-right: m(12);
+    }
+
+    .kinks-guide__title {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      @include des {
+        font-size: d(60);
+      }
+  
+      @include mob {
+        font-size: m(36);
+      }
+
+      &--white {
+        color: var(--white)
+      }
+    }
+
+    .kinks-guide__subtitle {
+      position: relative;
+      font-family: var(--font-poppins);
+      font-weight: 300;
+      
+      @include des {
+        font-size: d(25);
+        line-height: d(37);
+      }
+  
+      @include mob {
+        font-size: m(15);
+        line-height: m(23);
+      }
+
+      &--white {
+        color: var(--white)
+      }
+    }
+  }
+}
+

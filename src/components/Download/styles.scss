@@ -1,0 +1,63 @@
+.download-app {
+  @include des {
+    position: fixed;
+    left: 0;
+    z-index: 9989;
+    background-color: var(--white);
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+
+    display: flex;
+    align-items: center;
+
+    width: d(342);
+    bottom: d(58);
+    border-top-right-radius: d(19);
+    border-bottom-right-radius: d(19);
+    padding: d(18) d(24) d(18) d(22);
+
+    &.min-download {
+      width: d(128);
+    }
+
+    &.min-download-transform {
+      transform: translateY(-132%);
+    }
+
+    &__qr {
+      position: relative;
+      aspect-ratio: 1/1;
+
+      & svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      width: d(82);
+      flex: 0 0 d(82);
+    }
+
+    &__text {
+      color: var(--black);
+      font-weight: 300;
+      text-transform: uppercase;
+      font-family: var(--font-poppins);
+      white-space: nowrap;
+      transition: opacity 0.3s ease 0s;
+
+      .min-download & {
+        opacity: 0;
+      }
+
+      font-size: d(25);
+      margin-left: d(18);
+    }
+  }
+
+  @include mob {
+    display: none;
+  }
+}

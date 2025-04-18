@@ -1,0 +1,66 @@
+.influencer-quote {
+  & .white {
+    color: white;
+  }
+
+  & .influencer-quote__title {
+    display: flex;
+    align-items: center;
+
+    font-weight: 300;
+
+    @include des {
+      margin-bottom: d(30);
+    }
+
+    @include mob {
+      max-width: m(290);
+    }
+
+    img {
+      @include des {
+        width: d(107);
+        height: d(107);
+        margin-right: d(21);
+      }
+
+      @include mob {
+        width: m(56);
+        height: m(56);
+        margin-right: m(10);
+      }
+    }
+  }
+
+  .influencer-quote__name,
+  .influencer-quote__role {
+    font-family: var(--font-poppins);
+    text-align: left;
+
+    @include des {
+      font-size: d(35);
+    }
+
+    @include mob {
+      font-size: m(17);
+    }
+  }
+
+  .influencer-quote__role {
+    font-style: italic;
+  }
+
+  .influencer-quote__quote {
+    font-family: var(--font-poppins);
+    font-weight: 300;
+    text-align: left;
+
+    @include des {
+      font-size: d(25);
+    }
+
+    @include mob {
+      font-size: m(18);
+    }
+  }
+}

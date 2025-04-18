@@ -1,0 +1,39 @@
+{
+  "title": {
+    "type": "h1",
+    "text": "C<span>o</span>ntact us"
+  },
+  "descr": {
+    "text": "Do you have any question, an idea or a collaboration? Contact us!"
+  },
+  "items": [
+    {
+      "title": {
+        "type": "h2",
+        "text": "Supp<span>o</span>rt"
+      },
+      "descr": {
+        "text": "Got questions? We're here to help!"
+      },
+      "link": {
+        "text": "support@<br class='mobile'>flure.com",
+        "href": "mailto:support@flure.com"
+      }
+    },
+    {
+      "title": {
+        "type": "h2",
+        "text": "Press<br> Enquiries<span>&</span><br> c<span>o</span>llabs",
+        "color": "white"
+      },
+      "descr": {
+        "text": "Media, Influencer, or Expert? Let's Collaborate!",
+        "color": "white"
+      },
+      "link": {
+        "text": "hi@flure.com",
+        "href": "mailto:hi@flure.com"
+      }
+    }
+  ]
+}

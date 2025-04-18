@@ -1,0 +1,23 @@
+.share-nude-btn {
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  background-color: #d9bbf9;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include des {
+    height: d(102);
+    font-size: d(35);
+    padding: 0 d(48);
+    border-radius: d(89);
+  }
+
+  @include mob {
+    height: m(40);
+    font-size: m(15);
+    padding: 0 m(38);
+    border-radius: m(89);
+  }
+}

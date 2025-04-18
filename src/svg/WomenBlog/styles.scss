@@ -1,0 +1,18 @@
+.women-blog {
+  position: absolute;
+  top: 0;
+  z-index: 9;
+
+  @include des {
+    width: d(736);
+    height: d(361);
+    left: d(438);
+    top: d(-171);
+  }
+
+  @include mob {
+    width: m(306);
+    height: m(145);
+    right: m(12);
+  }
+}

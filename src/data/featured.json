@@ -1,0 +1,35 @@
+{
+  "title": { "text": "As featured in", "type": "h5" },
+  "items": [
+    {
+      "img": "/images/featured/bestlife.png",
+      "link": "https://bestlifeonline.com/what-does-an-upside-down-pineapple-mean/",
+      "key": "bestlife"
+    },
+    {
+      "img": "/images/featured/gdi.png",
+      "link": "https://www.globaldatinginsights.com/news/the-gdi-podcast-flure-the-dating-app-empowering-female-users/",
+      "key": "gdi"
+    },
+    {
+      "img": "/images/featured/cosmopolitan.png",
+      "link": "https://www.cosmopolitan.com/sex-love/a28137017/sexting-apps/",
+      "key": "cosmopolitan"
+    },
+    {
+      "img": "/images/featured/disrupt.png",
+      "link": "https://disruptmagazine.com/how-flures-female-driven-invitation-system-is-helping-women-find-peace-of-mind-online/",
+      "key": "disrupt"
+    },
+    {
+      "img": "/images/featured/dating-advice.png",
+      "link": "https://www.datingadvice.com/for-women/sex-positive-dating-app-flure",
+      "key": "datingadvice"
+    },
+    {
+      "img": "/images/featured/girl-talking.png",
+      "link": "https://www.girltalkhq.com/why-do-some-women-feel-awkward-talking-about-one-night-stands/",
+      "key": "girltalking"
+    }
+  ]
+}

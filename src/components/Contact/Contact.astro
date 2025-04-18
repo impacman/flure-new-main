@@ -1,0 +1,32 @@
+---
+import "./styles.scss";
+
+import contactus from "../../data/contactus.json";
+
+const { title, descr, items } = contactus;
+
+import Title from "../Title";
+import Descr from "../Descr";
+import ContactWave from "../../svg/ContactWave";
+import LetterWomen from "../../svg/LetterWomen";
+import Letters from "../../svg/Letters";
+---
+
+<section class="contact-us">
+  <div class="contact-us__wrap">
+    <Title title={title} />
+    <Descr descr={descr} />
+    {
+      items.map(({ title, descr, link }) => (
+        <div class="contact-us__item">
+          <Title title={title} />
+          <Descr descr={descr} />
+          <a class="link" href={link.href} set:html={link.text} />
+        </div>
+      ))
+    }
+  </div>
+  <LetterWomen client:only="react" />
+  <ContactWave client:only="react" />
+  <Letters client:only="react" />
+</section>

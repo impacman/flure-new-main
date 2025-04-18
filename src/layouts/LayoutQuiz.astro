@@ -1,0 +1,33 @@
+---
+import "../styles/global.scss";
+
+import HeadQuiz from "../components/HeadQuiz";
+import Preloader from "../components/Preloader";
+import PageTransition from "../components/PageTransition";
+import ScrollSmooth from "../components/ScrollSmooth";
+import GTM from "../components/GTM.astro";
+
+export interface Props {
+  metadata: {
+    title: string;
+    descr: string;
+  };
+  bodyColor?: string;
+}
+
+const { metadata, bodyColor } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <HeadQuiz metadata={metadata} />
+  <body class={`${bodyColor} scroll`}>
+    <Preloader />
+    <PageTransition />
+    <main>
+      <slot />
+    </main>
+    <ScrollSmooth client:only="react" />
+    <GTM />
+  </body>
+</html>

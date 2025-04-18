@@ -1,0 +1,75 @@
+.letter {
+  position: absolute;
+  z-index: 999;
+  cursor: grab;
+  z-index: 9;
+
+  & svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--1 {
+    @include des {
+      width: d(292);
+      height: d(225);
+      top: d(480);
+      left: d(10);
+    }
+
+    @include mob {
+      width: m(132);
+      height: m(142);
+      top: m(310);
+      left: m(-30);
+    }
+  }
+
+  &--2 {
+    @include des {
+      width: d(266);
+      height: d(233);
+      top: d(62);
+      right: d(358);
+    }
+
+    @include mob {
+      width: m(129);
+      height: m(139);
+      top: m(36);
+      right: m(-50);
+    }
+  }
+
+  &--3 {
+    @include des {
+      width: d(330);
+      height: d(254);
+      top: 50%;
+      right: d(307);
+    }
+
+    @include mob {
+      width: m(157);
+      height: m(170);
+      top: 56%;
+      right: m(-48);
+    }
+  }
+
+  &--4 {
+    @include des {
+      width: d(196);
+      height: d(211);
+      top: d(750);
+      right: 0;
+    }
+
+    @include mob {
+      width: m(93);
+      height: m(100);
+      top: m(534);
+      right: 0;
+    }
+  }
+}
